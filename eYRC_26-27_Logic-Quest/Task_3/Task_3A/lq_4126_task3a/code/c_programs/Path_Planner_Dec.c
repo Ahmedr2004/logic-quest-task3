@@ -1,75 +1,75 @@
 /*
- * Logic Quest (LQ): Task 3A Path Planner with Decryption
- *
- * Computes the shortest path on the Logic Quest arena (nodes N1..N36), with the
- * line weights of Figure 1 on the Task 3A page: straight line 5, ring arcs
- * 7 / 11 / 15 / 19 (inner ring to outermost ring), wavy line N1-N36 100.
- *
- * Inputs : current_node, next_node, is_encrypted
- *   current_node     : where the bot is, 1..36. The path starts here.
- *                      At the first location the bot is in the start box, N35.
- *   is_encrypted = 0 : next_node is a node number.
- *                      Path: current_node -> next_node.
- *   is_encrypted = 1 : next_node is the 8-byte encrypted code, encrypted with
- *                      PRESENT-80.
- *                      Path: current_node -> the drop node in the block.
- *
- * Decrypted code (8 bytes, byte 0 first):
- *   byte 0     : done flag (1 = last block: no pick-up after this drop)
- *   byte 1..5  : message, 5 ASCII characters (0x00 = no character)
- *   byte 6     : next pick-up node 1..36 (not used when the done flag is 1)
- *   byte 7     : drop node 1..36 for this block
- *   e.g. message "HELLO", drop at N26, then pick up at N12
- *        -> 00 48 45 4C 4C 4F 0C 1A = 0048454C4C4F0C1A
- *
- * Outputs:
- *   is_encrypted = 0 : the path from current_node to next_node.
- *   is_encrypted = 1 : the message (message[]) and the path from current_node
- *                      to the drop node. When the done flag is 0, the inputs
- *                      for the next run are written too:
- *                          IS_ENCRYPTED = 0
- *                          CURRENT_NODE = the drop node
- *                          NEXT_NODE    = the next pick-up node
- *                      When the done flag is 1, the inputs are left as they are.
- *
- * Output (PC), read by test.sh line by line:
- *   is_encrypted = 0     is_encrypted = 1, done = 0     is_encrypted = 1, done = 1
- *   35                    Message : HELLO                 Message : BYE
- *   ...                   7                               7
- *   7                     ...                             ...
- *                         26                              26
- *                         Next current_node : 26          Done
- *                         Next next_node : 12
- *   The path is one node per line, first node first. The message line shows
- *   the non-zero message bytes as characters. The code at the end of main
- *   prints all of this from message[], path_planned[], idx and the inputs
- *   written for the next run.
- *
- * Debug prints: start every debug line with "dbg:" (see Functions Usage
- *   below). test.sh and the evaluator skip the lines that start with "dbg:".
- *   Any other extra line counts as part of your output and makes it wrong.
- *
- * PRESENT-80 (the cipher used for the encrypted codes):
- *   block 64 bits, key 80 bits = A1 B2 C3 D4 E5 F6 07 18 29 3A (PRESENT_KEY_* below),
- *   31 rounds. See the Task 3A page for the full description of the encryption;
- *   your program has to do the reverse.
- *
- * Data memory ranges (used on the RISC-V CPU, Task 3B):
- *   0x02000000 .. 0x0200000F : inputs
- *   0x02000010 .. 0x0200001F : outputs (0x0200001C = CPU_DONE)
- *   0x02000020 and up        : working memory, stack at the top
- *
- * Inputs  : ENCRYPTED_HI (0x02000000)  encrypted block, bytes 0..3 (first 8 hex digits)
- *           ENCRYPTED_LO (0x02000004)  encrypted block, bytes 4..7 (last 8 hex digits)
- *           IS_ENCRYPTED (0x02000008)  0 or 1                                            } written for
- *           NEXT_NODE    (0x0200000C)  next node, when IS_ENCRYPTED = 0   } the next run
- *           CURRENT_NODE (0x0200000D)  current node (where the bot is)     } when done = 0
- * Outputs : MESSAGE_0..4 (0x02000010 .. 0x02000014)  message, block bytes 1..5
- *           NODE_POINT   (0x02000018)  every node of the path, written in order
- *           CPU_DONE     (0x0200001C)  = 1 when finished
- *
- * Make sure you don't change anything outside the "Add your code here" sections.
- */
+* Logic Quest (LQ): Task 3A Path Planner with Decryption
+*
+* Computes the shortest path on the Logic Quest arena (nodes N1..N36), with the
+* line weights of Figure 1 on the Task 3A page: straight line 5, ring arcs
+* 7 / 11 / 15 / 19 (inner ring to outermost ring), wavy line N1-N36 100.
+*
+* Inputs : current_node, next_node, is_encrypted
+*   current_node     : where the bot is, 1..36. The path starts here.
+*                      At the first location the bot is in the start box, N35.
+*   is_encrypted = 0 : next_node is a node number.
+*                      Path: current_node -> next_node.
+*   is_encrypted = 1 : next_node is the 8-byte encrypted code, encrypted with
+*                      PRESENT-80.
+*                      Path: current_node -> the drop node in the block.
+*
+* Decrypted code (8 bytes, byte 0 first):
+*   byte 0     : done flag (1 = last block: no pick-up after this drop)
+*   byte 1..5  : message, 5 ASCII characters (0x00 = no character)
+*   byte 6     : next pick-up node 1..36 (not used when the done flag is 1)
+*   byte 7     : drop node 1..36 for this block
+*   e.g. message "HELLO", drop at N26, then pick up at N12
+*        -> 00 48 45 4C 4C 4F 0C 1A = 0048454C4C4F0C1A
+*
+* Outputs:
+*   is_encrypted = 0 : the path from current_node to next_node.
+*   is_encrypted = 1 : the message (message[]) and the path from current_node
+*                      to the drop node. When the done flag is 0, the inputs
+*                      for the next run are written too:
+*                          IS_ENCRYPTED = 0
+*                          CURRENT_NODE = the drop node
+*                          NEXT_NODE    = the next pick-up node
+*                      When the done flag is 1, the inputs are left as they are.
+*
+* Output (PC), read by test.sh line by line:
+*   is_encrypted = 0     is_encrypted = 1, done = 0     is_encrypted = 1, done = 1
+*   35                   Message : HELLO                Message : BYE
+*   ...                  7                              7
+*   7                    ...                            ...
+*                        26                             26
+*                        Next current_node : 26         Done
+*                        Next next_node : 12
+*   The path is one node per line, first node first. The message line shows
+*   the non-zero message bytes as characters. The code at the end of main
+*   prints all of this from message[], path_planned[], idx and the inputs
+*   written for the next run.
+*
+* Debug prints: start every debug line with "dbg:" (see Functions Usage
+*   below). test.sh and the evaluator skip the lines that start with "dbg:".
+*   Any other extra line counts as part of your output and makes it wrong.
+*
+* PRESENT-80 (the cipher used for the encrypted codes):
+*   block 64 bits, key 80 bits = A1 B2 C3 D4 E5 F6 07 18 29 3A (PRESENT_KEY_* below),
+*   31 rounds. See the Task 3A page for the full description of the encryption;
+*   your program has to do the reverse.
+*
+* Data memory ranges (used on the RISC-V CPU, Task 3B):
+*   0x02000000 .. 0x0200000F : inputs
+*   0x02000010 .. 0x0200001F : outputs (0x0200001C = CPU_DONE)
+*   0x02000020 and up        : working memory, stack at the top
+*
+* Inputs  : ENCRYPTED_HI (0x02000000)  encrypted block, bytes 0..3 (first 8 hex digits)
+*           ENCRYPTED_LO (0x02000004)  encrypted block, bytes 4..7 (last 8 hex digits)
+*           IS_ENCRYPTED (0x02000008)  0 or 1                            } written for
+*           NEXT_NODE    (0x0200000C)  next node, when IS_ENCRYPTED = 0   } the next run
+*           CURRENT_NODE (0x0200000D)  current node (where the bot is)    } when done = 0
+* Outputs : MESSAGE_0..4 (0x02000010 .. 0x02000014)  message, block bytes 1..5
+*           NODE_POINT   (0x02000018)  every node of the path, written in order
+*           CPU_DONE     (0x0200001C)  = 1 when finished
+*
+* Make sure you don't change anything outside the "Add your code here" sections.
+*/
 
 #include <stdlib.h>
 #include <stdbool.h>
