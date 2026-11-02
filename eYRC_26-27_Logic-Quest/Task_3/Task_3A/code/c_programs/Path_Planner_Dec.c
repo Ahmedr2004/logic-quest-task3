@@ -253,22 +253,22 @@ static uint32_t present_decrypt(uint32_t hi, uint32_t lo, uint8_t *msg) {
     return ((hi >> 24) << 16) | (lo & 0xFFFF);
 }
 
-// ---------- shortest path: depth-first search over simple paths (no extra arrays) ----------
-// The arena has only a few loops, so there are few simple paths. path_planned[] is the search stack.
-
-// one undirected line a--b with weight w. r holds the best neighbour of u found so far
-// (low byte = node, high byte = weight). Keeps the smallest neighbour of u that is > t.
-static uint16_t cand(uint16_t r, uint8_t u, uint8_t t, uint8_t a, uint8_t b, uint8_t w) {
-    uint8_t v = 0;
-    if (u == a) v = b; else if (u == b) v = a;
-    if (v > t && (r == 0 || v < (uint8_t)r)) r = v | ((uint16_t)w << 8);
+// ---------- shortest path: Bellman-Ford from the end node, then walk back ----------
+// one undirected line a--b with weight w. d[] holds distances to the end node (255 = unknown).
+//  c == 0 : relax, returns 1 if a distance changed
+//  c != 0 : if c is a or b, returns the other end when that line is on a shortest path
+static uint8_t rel(uint8_t *d, uint8_t a, uint8_t b, uint8_t w, uint8_t c) {
+    uint8_t r = 0;
+    if (d[a] + w < d[b]) { d[b] = d[a] + w; r = 1; }
+    if (d[b] + w < d[a]) { d[a] = d[b] + w; r = 1; }
+    if (c == a) { if (d[b] + w == d[a]) r = b; }
+    else if (c == b) { if (d[a] + w == d[b]) r = a; }
     return r;
 }
 
-// smallest neighbour of u that is bigger than t: (weight << 8) | node, or 0 when there is none
-static uint16_t adj(uint8_t u, uint8_t t) {
-    uint16_t r = 0;
-    #define E(a, b, w) r = cand(r, u, t, a, b, w);
+static uint8_t sweep(uint8_t *d, uint8_t c) {
+    uint8_t r = 0, t;
+    #define E(a, b, w) t = rel(d, a, b, w, c); if (t) r = t;
     // wavy line
     E(36, 1, 100)
     // straight lines (5)
@@ -287,41 +287,6 @@ static uint16_t adj(uint8_t u, uint8_t t) {
     E(13, 30, 19) E(30, 35, 19) E(35, 31, 19)
     #undef E
     return r;
-}
-
-// stop = 0 : returns the weight of the shortest path s -> e (0xFFFF if none)
-// stop = 1 : best must be that weight; leaves a path of that weight in p[], returns its node count
-static uint16_t dfs(uint8_t *p, uint8_t s, uint8_t e, uint16_t best, uint8_t stop) {
-    uint16_t cost = 0, r;
-    uint8_t d = 0, t = 0, v, j;
-    p[0] = s;
-    for (;;) {
-        r = 0;
-        if (p[d] != e) {
-            r = adj(p[d], t);
-            while (r) {                                  // skip neighbours already on the path, or too heavy
-                v = r;
-                for (j = 0; j <= d && p[j] != v; j++) { }
-                if (j > d && cost + (r >> 8) <= best) break;
-                r = adj(p[d], v);
-            }
-        } else {                                         // reached the end node
-            if (cost < best) best = cost;
-            if (stop) return d + 1;
-        }
-        if (r) {                                         // go one node deeper
-            cost += r >> 8;
-            p[++d] = r;
-            t = 0;
-        } else {                                         // dead end: go back one node
-            if (d == 0) break;
-            v = p[d];
-            d--;
-            cost -= adj(p[d], v - 1) >> 8;               // weight of the line we just left
-            t = v;                                       // carry on with the next neighbour
-        }
-    }
-    return stop ? 0 : best;
 }
 
 // ##############################################
@@ -398,9 +363,16 @@ int main(int argc, char const *argv[]) {
     // set path_planned[] and idx, message[] when is_encrypted = 1, and the
     // inputs for the next run (see Outputs at the top of this file)
 
+    // prefer declaring variables like this
+    #ifdef __linux__
+        uint8_t dist[37];
+    #else
+        uint8_t *dist = (uint8_t *) 0x02000020;      // working memory starts at 0x02000020
+    #endif
+
     uint8_t go_on = 0;                               // 1 when the next move needs inputs written
     uint8_t pick  = 0;                               // next pick-up node
-    uint16_t best;
+    uint8_t i;
     if (is_encrypted) {
         uint32_t r = present_decrypt(ENCRYPTED_HI, ENCRYPTED_LO, message);
         end_point = r;                               // drop node
@@ -411,8 +383,15 @@ int main(int argc, char const *argv[]) {
     }
 
     if (start_point >= 1 && start_point <= 36 && end_point >= 1 && end_point <= 36) {
-        best = dfs(path_planned, start_point, end_point, 0xFFFF, 0);        // shortest weight
-        if (best != 0xFFFF) idx = dfs(path_planned, start_point, end_point, best, 1);   // a path of that weight
+        for (i = 0; i < 37; i++) dist[i] = 255;
+        dist[end_point] = 0;
+        while (sweep(dist, 0)) { }                   // distances to the end node
+        i = start_point;                             // walk from the start along falling distances
+        path_planned[idx++] = i;
+        while (i != end_point && idx < 40) {
+            i = sweep(dist, i);
+            path_planned[idx++] = i;
+        }
     }
 
     if (go_on) {                                     // inputs for the next move
