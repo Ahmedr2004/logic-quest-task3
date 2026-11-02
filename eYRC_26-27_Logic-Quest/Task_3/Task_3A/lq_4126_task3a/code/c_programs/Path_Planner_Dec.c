@@ -1,11 +1,11 @@
 /*
-* Logic Quest (LQ): Task 3A Path Planner with Decryption
+- Logic Quest (LQ): Task 3A Path Planner with Decryption
 *
-* Computes the shortest path on the Logic Quest arena (nodes N1..N36), with the
-* line weights of Figure 1 on the Task 3A page: straight line 5, ring arcs
-* 7 / 11 / 15 / 19 (inner ring to outermost ring), wavy line N1-N36 100.
+- Computes the shortest path on the Logic Quest arena (nodes N1..N36), with the
+- line weights of Figure 1 on the Task 3A page: straight line 5, ring arcs
+- 7 / 11 / 15 / 19 (inner ring to outermost ring), wavy line N1-N36 100.
 *
-* Inputs : current_node, next_node, is_encrypted
+- Inputs : current_node, next_node, is_encrypted
 *   current_node     : where the bot is, 1..36. The path starts here.
 *                      At the first location the bot is in the start box, N35.
 *   is_encrypted = 0 : next_node is a node number.
@@ -14,7 +14,7 @@
 *                      PRESENT-80.
 *                      Path: current_node -> the drop node in the block.
 *
-* Decrypted code (8 bytes, byte 0 first):
+- Decrypted code (8 bytes, byte 0 first):
 *   byte 0     : done flag (1 = last block: no pick-up after this drop)
 *   byte 1..5  : message, 5 ASCII characters (0x00 = no character)
 *   byte 6     : next pick-up node 1..36 (not used when the done flag is 1)
@@ -22,7 +22,7 @@
 *   e.g. message "HELLO", drop at N26, then pick up at N12
 *        -> 00 48 45 4C 4C 4F 0C 1A = 0048454C4C4F0C1A
 *
-* Outputs:
+- Outputs:
 *   is_encrypted = 0 : the path from current_node to next_node.
 *   is_encrypted = 1 : the message (message[]) and the path from current_node
 *                      to the drop node. When the done flag is 0, the inputs
@@ -32,43 +32,43 @@
 *                          NEXT_NODE    = the next pick-up node
 *                      When the done flag is 1, the inputs are left as they are.
 *
-* Output (PC), read by test.sh line by line:
+- Output (PC), read by test.sh line by line:
 *   is_encrypted = 0     is_encrypted = 1, done = 0     is_encrypted = 1, done = 1
-*   35                   Message : HELLO                Message : BYE
-*   ...                  7                              7
-*   7                    ...                            ...
-*                        26                             26
-*                        Next current_node : 26         Done
-*                        Next next_node : 12
+*   35                    Message : HELLO                 Message : BYE
+*   ...                   7                               7
+*   7                     ...                             ...
+*                         26                              26
+*                         Next current_node : 26          Done
+*                         Next next_node : 12
 *   The path is one node per line, first node first. The message line shows
 *   the non-zero message bytes as characters. The code at the end of main
 *   prints all of this from message[], path_planned[], idx and the inputs
 *   written for the next run.
 *
-* Debug prints: start every debug line with "dbg:" (see Functions Usage
+- Debug prints: start every debug line with "dbg:" (see Functions Usage
 *   below). test.sh and the evaluator skip the lines that start with "dbg:".
 *   Any other extra line counts as part of your output and makes it wrong.
 *
-* PRESENT-80 (the cipher used for the encrypted codes):
+- PRESENT-80 (the cipher used for the encrypted codes):
 *   block 64 bits, key 80 bits = A1 B2 C3 D4 E5 F6 07 18 29 3A (PRESENT_KEY_* below),
 *   31 rounds. See the Task 3A page for the full description of the encryption;
 *   your program has to do the reverse.
 *
-* Data memory ranges (used on the RISC-V CPU, Task 3B):
+- Data memory ranges (used on the RISC-V CPU, Task 3B):
 *   0x02000000 .. 0x0200000F : inputs
 *   0x02000010 .. 0x0200001F : outputs (0x0200001C = CPU_DONE)
 *   0x02000020 and up        : working memory, stack at the top
 *
-* Inputs  : ENCRYPTED_HI (0x02000000)  encrypted block, bytes 0..3 (first 8 hex digits)
+- Inputs  : ENCRYPTED_HI (0x02000000)  encrypted block, bytes 0..3 (first 8 hex digits)
 *           ENCRYPTED_LO (0x02000004)  encrypted block, bytes 4..7 (last 8 hex digits)
-*           IS_ENCRYPTED (0x02000008)  0 or 1                            } written for
+*           IS_ENCRYPTED (0x02000008)  0 or 1                                            } written for
 *           NEXT_NODE    (0x0200000C)  next node, when IS_ENCRYPTED = 0   } the next run
-*           CURRENT_NODE (0x0200000D)  current node (where the bot is)    } when done = 0
-* Outputs : MESSAGE_0..4 (0x02000010 .. 0x02000014)  message, block bytes 1..5
+*           CURRENT_NODE (0x0200000D)  current node (where the bot is)     } when done = 0
+- Outputs : MESSAGE_0..4 (0x02000010 .. 0x02000014)  message, block bytes 1..5
 *           NODE_POINT   (0x02000018)  every node of the path, written in order
 *           CPU_DONE     (0x0200001C)  = 1 when finished
 *
-* Make sure you don't change anything outside the "Add your code here" sections.
+- Make sure you don't change anything outside the "Add your code here" sections.
 */
 
 #include <stdlib.h>
@@ -190,74 +190,78 @@ Examples:
 
 // ############# Add your code here #############
 
-// ---------- PRESENT-80 decryption (no arrays: all state in scalars) ----------
 #define SBX(x, L, H) (((((x) < 8) ? (L) : (H)) >> (((x) & 7) << 2)) & 15)
-#define SB(x)  SBX(x, 0xDA09B65Cu, 0x21748FE3u)   // S-box
-#define ISB(x) SBX(x, 0xD21C8FE5u, 0xA970364Bu)   // inverse S-box
+#define SB(x)  SBX(x, 0xDA09B65Cu, 0x21748FE3u)
+#define ISB(x) SBX(x, 0xD21C8FE5u, 0xA970364Bu)
 
-// decrypts hi:lo, writes message bytes 1..5 to msg[0..4],
-// returns (done byte << 16) | (next pick-up << 8) | drop node
-static uint32_t present_decrypt(uint32_t hi, uint32_t lo, uint8_t *msg) {
-    // 80-bit key register as five 16-bit limbs, k0 = bits 79..64
-    uint32_t k0 = PRESENT_KEY_HI >> 16,  k1 = PRESENT_KEY_HI & 0xFFFF;
-    uint32_t k2 = PRESENT_KEY_MID >> 16, k3 = PRESENT_KEY_MID & 0xFFFF;
+// Keep present_decrypt separate to prevent spilling into main's frame
+static __attribute__((noinline)) uint32_t present_decrypt(uint32_t hi, uint32_t lo, uint8_t *msg) {
+    uint32_t k0 = PRESENT_KEY_HI >> 16;
+    uint32_t k1 = PRESENT_KEY_HI & 0xFFFF;
+    uint32_t k2 = PRESENT_KEY_MID >> 16;
+    uint32_t k3 = PRESENT_KEY_MID & 0xFFFF;
     uint32_t k4 = PRESENT_KEY_LO;
-    uint32_t a, b, c, oh, ol, bit;
-    uint8_t i, n, p;
+    uint32_t t;
+    uint8_t i, n, p, bit;
 
-    for (i = 1; i < 32; i++) {                       // forward key schedule -> K32
-        a = k0; b = k1; c = k2;                      // rotate left 48
-        k0 = k3; k1 = k4; k2 = a; k3 = b; k4 = c;
-        a = k0;                                      // rotate left 13
+    for (i = 1; i < 32; i++) {
+        t = k0; k0 = k3; k3 = k1; k1 = k4; k4 = k2; k2 = t;
+        t = k0;
         k0 = ((k0 << 13) | (k1 >> 3)) & 0xFFFF;
         k1 = ((k1 << 13) | (k2 >> 3)) & 0xFFFF;
         k2 = ((k2 << 13) | (k3 >> 3)) & 0xFFFF;
         k3 = ((k3 << 13) | (k4 >> 3)) & 0xFFFF;
-        k4 = ((k4 << 13) | (a  >> 3)) & 0xFFFF;
+        k4 = ((k4 << 13) | (t  >> 3)) & 0xFFFF;
+
         k0 = (k0 & 0x0FFF) | ((uint32_t)SB(k0 >> 12) << 12);
         k3 ^= i >> 1;
         k4 ^= (uint32_t)(i & 1) << 15;
     }
+
     hi ^= (k0 << 16) | k1;
     lo ^= (k2 << 16) | k3;
+
     for (i = 31; i > 0; i--) {
-        oh = 0; ol = 0;                              // inverse permutation
+        uint32_t oh = 0, ol = 0;
         p = 0;
         for (n = 0; n < 63; n++) {
             bit = ((p >= 32) ? (hi >> (p - 32)) : (lo >> p)) & 1;
-            if (n >= 32) oh |= bit << (n - 32); else ol |= bit << n;
-            p += 16; if (p >= 63) p -= 63;
+            if (n >= 32) oh |= (uint32_t)bit << (n - 32);
+            else        ol |= (uint32_t)bit << n;
+            p += 16;
+            if (p >= 63) p -= 63;
         }
-        oh |= hi & 0x80000000u;                      // bit 63 stays
+        oh |= hi & 0x80000000u;
+
         hi = 0; lo = 0;
-        for (n = 0; n < 32; n += 4) {                // inverse S-box layer
+        for (n = 0; n < 32; n += 4) {
             hi |= (uint32_t)ISB((oh >> n) & 15) << n;
             lo |= (uint32_t)ISB((ol >> n) & 15) << n;
         }
-        k3 ^= i >> 1;                                // undo key schedule step i
+
+        k3 ^= i >> 1;
         k4 ^= (uint32_t)(i & 1) << 15;
         k0 = (k0 & 0x0FFF) | ((uint32_t)ISB(k0 >> 12) << 12);
-        a = k4;                                      // rotate right 13
+
+        t = k4;
         k4 = ((k4 >> 13) | (k3 << 3)) & 0xFFFF;
         k3 = ((k3 >> 13) | (k2 << 3)) & 0xFFFF;
         k2 = ((k2 >> 13) | (k1 << 3)) & 0xFFFF;
         k1 = ((k1 >> 13) | (k0 << 3)) & 0xFFFF;
-        k0 = ((k0 >> 13) | (a  << 3)) & 0xFFFF;
-        a = k0; b = k1;                              // rotate right 48
-        k0 = k2; k1 = k3; k2 = k4; k3 = a; k4 = b;
-        hi ^= (k0 << 16) | k1;                       // add round key Ki
+        k0 = ((k0 >> 13) | (t  << 3)) & 0xFFFF;
+        t = k0; k0 = k2; k2 = k4; k4 = k1; k1 = k3; k3 = t;
+
+        hi ^= (k0 << 16) | k1;
         lo ^= (k2 << 16) | k3;
     }
+
     msg[0] = hi >> 16; msg[1] = hi >> 8; msg[2] = hi;
     msg[3] = lo >> 24; msg[4] = lo >> 16;
     return ((hi >> 24) << 16) | (lo & 0xFFFF);
 }
 
-// ---------- shortest path: Bellman-Ford from the end node, then walk back ----------
-// one undirected line a--b with weight w. d[] holds distances to the end node (255 = unknown).
-//  c == 0 : relax, returns 1 if a distance changed
-//  c != 0 : if c is a or b, returns the other end when that line is on a shortest path
-static uint8_t rel(uint8_t *d, uint8_t a, uint8_t b, uint8_t w, uint8_t c) {
+// Relaxation helper: inlined within sweep() to avoid nested call frames
+static inline uint8_t rel_edge(uint8_t *d, uint8_t a, uint8_t b, uint8_t w, uint8_t c) {
     uint8_t r = 0;
     if (d[a] + w < d[b]) { d[b] = d[a] + w; r = 1; }
     if (d[b] + w < d[a]) { d[a] = d[b] + w; r = 1; }
@@ -266,9 +270,10 @@ static uint8_t rel(uint8_t *d, uint8_t a, uint8_t b, uint8_t w, uint8_t c) {
     return r;
 }
 
+// sweep() remains a separate function to keep code size well under the 4096-byte limit
 static uint8_t sweep(uint8_t *d, uint8_t c) {
     uint8_t r = 0, t;
-    #define E(a, b, w) t = rel(d, a, b, w, c); if (t) r = t;
+    #define E(a, b, w) t = rel_edge(d, a, b, w, c); if (t) r = t;
     // wavy line
     E(36, 1, 100)
     // straight lines (5)
@@ -360,9 +365,6 @@ int main(int argc, char const *argv[]) {
 
     // ############# Add your code here #############
 
-    // set path_planned[] and idx, message[] when is_encrypted = 1, and the
-    // inputs for the next run (see Outputs at the top of this file)
-
     // prefer declaring variables like this
     #ifdef __linux__
         uint8_t dist[37];
@@ -373,6 +375,7 @@ int main(int argc, char const *argv[]) {
     uint8_t go_on = 0;                               // 1 when the next move needs inputs written
     uint8_t pick  = 0;                               // next pick-up node
     uint8_t i;
+
     if (is_encrypted) {
         uint32_t r = present_decrypt(ENCRYPTED_HI, ENCRYPTED_LO, message);
         end_point = r;                               // drop node
