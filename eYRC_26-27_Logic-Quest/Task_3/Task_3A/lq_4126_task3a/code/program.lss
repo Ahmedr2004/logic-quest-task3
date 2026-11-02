@@ -23,64 +23,65 @@ SYMBOL TABLE:
 00000000 l    d  .debug_rnglists	00000000 .debug_rnglists
 00000000 l    df *ABS*	00000000 crt0.c
 00000014 l     F .init	0000004c _cstart
-00000cc8 l     F .text	0000003c rel.constprop.0
+00000568 l     F .text	00000080 rel.constprop.0
+000005e8 l     F .text	000004c4 sweep.constprop.0
 00000000 l    df *ABS*	00000000 save-restore.o
 00000000 l    df *ABS*	00000000 memcpy-asm.S.o
 00000000 l    df *ABS*	00000000 memset.S.o
 00000000 l    df *ABS*	00000000 tls.c
 00000000 g       *ABS*	00000000 __data_size
 02000800 g       .data	00000000 __global_pointer$
-00000d14 g     F .text	0000004c .hidden __riscv_save_8
+00000abc g     F .text	0000004c .hidden __riscv_save_8
+00000b3a  w      .debug_info	00000000 .hidden Path_Planner_Dec.c.b2d22969
 02000000 g       .tbss_space	00000000 __tls_base
 00001000 g       *ABS*	00000000 __flash_size
-00000da8 g     F .text	00000018 .hidden __riscv_restore_3
-00000d80 g     F .text	00000040 .hidden __riscv_restore_10
-00000d14 g     F .text	0000004c .hidden __riscv_save_11
+00000b50 g     F .text	00000018 .hidden __riscv_restore_3
+00000b28 g     F .text	00000040 .hidden __riscv_restore_10
+00000abc g     F .text	0000004c .hidden __riscv_save_11
 000000b8 g       *ABS*	00000000 __stack_size
-00000da8 g     F .text	00000018 .hidden __riscv_restore_2
+00000b50 g     F .text	00000018 .hidden __riscv_restore_2
 00000000 g       *ABS*	00000000 __bss_size
-00000dc0 g     F .text	00000024 memcpy
-00000d04 g     F .text	0000005c .hidden __riscv_save_12
+00000b68 g     F .text	00000024 memcpy
+00000aac g     F .text	0000005c .hidden __riscv_save_12
 00000000 g       *ABS*	00000000 __data_source_size
-00000d80 g     F .text	00000040 .hidden __riscv_restore_11
-00000d60 g     F .text	00000018 .hidden __riscv_save_1
-00000da8 g     F .text	00000018 .hidden __riscv_restore_0
-00000d30 g     F .text	00000030 .hidden __riscv_save_7
-00000d94 g     F .text	0000002c .hidden __riscv_restore_5
+00000b28 g     F .text	00000040 .hidden __riscv_restore_11
+00000b08 g     F .text	00000018 .hidden __riscv_save_1
+00000b50 g     F .text	00000018 .hidden __riscv_restore_0
+00000ad8 g     F .text	00000030 .hidden __riscv_save_7
+00000b3c g     F .text	0000002c .hidden __riscv_restore_5
 02000000 g       .bss	00000000 __bss_end
-00000d94 g     F .text	0000002c .hidden __riscv_restore_6
-00000d14 g     F .text	0000004c .hidden __riscv_save_9
-00000e00 g     F .text	00000008 _set_tls
-00000d30 g     F .text	00000030 .hidden __riscv_save_4
-00000e08 g       *ABS*	00000000 __data_source_end
-00000d60 g     F .text	00000018 .hidden __riscv_save_3
+00000b3c g     F .text	0000002c .hidden __riscv_restore_6
+00000abc g     F .text	0000004c .hidden __riscv_save_9
+00000ba8 g     F .text	00000008 _set_tls
+00000ad8 g     F .text	00000030 .hidden __riscv_save_4
+00000bb0 g       *ABS*	00000000 __data_source_end
+00000b08 g     F .text	00000018 .hidden __riscv_save_3
 00000000 g     F .init	00000014 _start
 02000000 g       *ABS*	00000000 __ram
 02000000 g       .tbss_space	00000000 __data_end
-00000e08 g       *ABS*	00000000 __tdata_source_end
-00000e08 g       .text	00000000 __text_end
-00000d14 g     F .text	0000004c .hidden __riscv_save_10
-00000d94 g     F .text	0000002c .hidden __riscv_restore_4
-00000d80 g     F .text	00000040 .hidden __riscv_restore_8
-00000d30 g     F .text	00000030 .hidden __riscv_save_6
+00000bb0 g       *ABS*	00000000 __tdata_source_end
+00000bb0 g       .text	00000000 __text_end
+00000abc g     F .text	0000004c .hidden __riscv_save_10
+00000b3c g     F .text	0000002c .hidden __riscv_restore_4
+00000b28 g     F .text	00000040 .hidden __riscv_restore_8
+00000ad8 g     F .text	00000030 .hidden __riscv_save_6
 02000000 g       .tbss_space	00000000 __bss_start
-00000de4 g     F .text	0000001c memset
-00000d80 g     F .text	00000040 .hidden __riscv_restore_9
-00000d94 g     F .text	0000002c .hidden __riscv_restore_7
-00000060 g     F .text	00000c68 main
+00000b8c g     F .text	0000001c memset
+00000b28 g     F .text	00000040 .hidden __riscv_restore_9
+00000b3c g     F .text	0000002c .hidden __riscv_restore_7
+00000060 g     F .text	00000508 main
 00000200 g       *ABS*	00000000 __ram_size
-00000d60 g     F .text	00000018 .hidden __riscv_save_2
+00000b08 g     F .text	00000018 .hidden __riscv_save_2
 02000200 g       .init	00000000 __stack
-00000d30 g     F .text	00000030 .hidden __riscv_save_5
+00000ad8 g     F .text	00000030 .hidden __riscv_save_5
 02000000 g       .bss	00000000 _end
 00000000 g     F *ABS*	00000000 vfscanf
-00000e08 g       *ABS*	00000000 __data_source
-000013ba  w      .debug_info	00000000 .hidden Path_Planner_Dec.c.91b6c2b9
-00000d78 g     F .text	00000048 .hidden __riscv_restore_12
-00000d60 g     F .text	00000018 .hidden __riscv_save_0
+00000bb0 g       *ABS*	00000000 __data_source
+00000b20 g     F .text	00000048 .hidden __riscv_restore_12
+00000b08 g     F .text	00000018 .hidden __riscv_save_0
 00000000 g       *ABS*	00000000 __flash
 02000000 g       .data	00000000 __data_start
-00000da8 g     F .text	00000018 .hidden __riscv_restore_1
+00000b50 g     F .text	00000018 .hidden __riscv_restore_1
 00000000 g     F *ABS*	00000000 vfprintf
 
 
@@ -95,21 +96,21 @@ Disassembly of section .init:
   10:	0040006f          	jal	x0,14 <_cstart>
 
 00000014 <_cstart>:
-  14:	    54d002ef          	jal	x5,d60 <__riscv_save_0>
+  14:	    2f5002ef          	jal	x5,b08 <__riscv_save_0>
   18:	    000015b7          	lui	x11,0x1
   1c:	    02000537          	lui	x10,0x2000
   20:	    00000613          	addi	x12,x0,0
-  24:	    e0858593          	addi	x11,x11,-504 # e08 <__data_source>
+  24:	    bb058593          	addi	x11,x11,-1104 # bb0 <__data_source>
   28:	    00050513          	addi	x10,x10,0 # 2000000 <__bss_end>
-  2c:	    595000ef          	jal	x1,dc0 <memcpy>
+  2c:	    33d000ef          	jal	x1,b68 <memcpy>
   30:	    02000537          	lui	x10,0x2000
   34:	    00000593          	addi	x11,x0,0
   38:	    00000613          	addi	x12,x0,0
   3c:	    00050513          	addi	x10,x10,0 # 2000000 <__bss_end>
-  40:	    5a5000ef          	jal	x1,de4 <memset>
+  40:	    34d000ef          	jal	x1,b8c <memset>
   44:	    02000537          	lui	x10,0x2000
   48:	    00050513          	addi	x10,x10,0 # 2000000 <__bss_end>
-  4c:	    5b5000ef          	jal	x1,e00 <_set_tls>
+  4c:	    35d000ef          	jal	x1,ba8 <_set_tls>
   50:	    00000593          	addi	x11,x0,0
   54:	    00000513          	addi	x10,x0,0
   58:	    008000ef          	jal	x1,60 <main>
@@ -118,901 +119,753 @@ Disassembly of section .init:
 Disassembly of section .text:
 
 00000060 <main>:
-  60:	                                                                                                       f8010113          	addi	x2,x2,-128
-  64:	                                                                                                       06112e23          	sw	x1,124(x2)
-  68:	                                                                                                       06812c23          	sw	x8,120(x2)
-  6c:	                                                                                                       06912a23          	sw	x9,116(x2)
-  70:	                                                                                                       07212823          	sw	x18,112(x2)
-  74:	                                                                                                       07312623          	sw	x19,108(x2)
-  78:	                                                                                                       07412423          	sw	x20,104(x2)
-  7c:	                                                                                                       07512223          	sw	x21,100(x2)
-  80:	                                                                                                       07612023          	sw	x22,96(x2)
-  84:	                                                                                                       05712e23          	sw	x23,92(x2)
-  88:	                                                                                                       05812c23          	sw	x24,88(x2)
-  8c:	                                                                                                       05912a23          	sw	x25,84(x2)
-  90:	                                                                                                       05a12823          	sw	x26,80(x2)
-  94:	                                                                                                       05b12623          	sw	x27,76(x2)
-  98:	                                                                                                       020007b7          	lui	x15,0x2000
-  9c:	                                                                                                       0087c703          	lbu	x14,8(x15) # 2000008 <__bss_end+0x8>
-  a0:	                                                                                                       0ff77793          	andi	x15,x14,255
-  a4:	                                                                                                       00f12623          	sw	x15,12(x2)
-  a8:	                                                                                                       020007b7          	lui	x15,0x2000
-  ac:	                                                                                                       00d7c903          	lbu	x18,13(x15) # 200000d <__bss_end+0xd>
-  b0:	                                                                                                       00100793          	addi	x15,x0,1
-  b4:	                                                                                                       00f10823          	sb	x15,16(x2)
-  b8:	                                                                                                       0ff97913          	andi	x18,x18,255
-  bc:	                                                                                                       020007b7          	lui	x15,0x2000
-  c0:	                                                /----------------------------------------------------- 4e070a63          	beq	x14,x0,5b4 <__ram_size+0x3b4>
-  c4:	                                                |                                                      0007ae03          	lw	x28,0(x15) # 2000000 <__bss_end>
-  c8:	                                                |                                                      0047a803          	lw	x16,4(x15)
-  cc:	                                                |                                                      c3d4a7b7          	lui	x15,0xc3d4a
-  d0:	                                                |                                                      1b278793          	addi	x15,x15,434 # c3d4a1b2 <__global_pointer$+0xc1d499b2>
-  d4:	                                                |                                                      00f12c23          	sw	x15,24(x2)
-  d8:	                                                |                                                      0718e7b7          	lui	x15,0x718e
-  dc:	                                                |                                                      5f678793          	addi	x15,x15,1526 # 718e5f6 <__global_pointer$+0x518ddf6>
-  e0:	                                                |                                                      00f12e23          	sw	x15,28(x2)
-  e4:	                                                |                                                      000037b7          	lui	x15,0x3
-  e8:	                                                |                                                      93a78793          	addi	x15,x15,-1734 # 293a <Path_Planner_Dec.c.91b6c2b9+0x1580>
-  ec:	                                                |                                                      00001537          	lui	x10,0x1
-  f0:	                                                |                                                      217498b7          	lui	x17,0x21749
-  f4:	                                                |                                                      da09b337          	lui	x6,0xda09b
-  f8:	                                                |                                                      02f11023          	sh	x15,32(x2)
-  fc:	                                                |                                                      000085b7          	lui	x11,0x8
- 100:	                                                |                                                      00100613          	addi	x12,x0,1
- 104:	                                                |                                                      01810293          	addi	x5,x2,24
- 108:	                                                |                                                      02010f93          	addi	x31,x2,32
- 10c:	                                                |                                                      fff50513          	addi	x10,x10,-1 # fff <__text_end+0x1f7>
- 110:	                                                |                                                      00700393          	addi	x7,x0,7
- 114:	                                                |                                                      fe388893          	addi	x17,x17,-29 # 21748fe3 <__global_pointer$+0x1f7487e3>
- 118:	                                                |                                                      65c30313          	addi	x6,x6,1628 # da09b65c <__global_pointer$+0xd809ae5c>
- 11c:	                                                |                                                      ffff8f37          	lui	x30,0xffff8
- 120:	                                                |                                                      02000e93          	addi	x29,x0,32
- 124:	                                                |                                               /----> 01c15783          	lhu	x15,28(x2)
- 128:	                                                |                                               |      01812703          	lw	x14,24(x2)
- 12c:	                                                |                                               |      01e15683          	lhu	x13,30(x2)
- 130:	                                                |                                               |      02015403          	lhu	x8,32(x2)
- 134:	                                                |                                               |      00e12e23          	sw	x14,28(x2)
- 138:	                                                |                                               |      02f11023          	sh	x15,32(x2)
- 13c:	                                                |                                               |      00d11c23          	sh	x13,24(x2)
- 140:	                                                |                                               |      00811d23          	sh	x8,26(x2)
- 144:	                                                |                                               |      00028793          	addi	x15,x5,0
- 148:	                                                |                                               |  /-> 0007d403          	lhu	x8,0(x15)
- 14c:	                                                |                                               |  |   0027d703          	lhu	x14,2(x15)
- 150:	                                                |                                               |  |   00278793          	addi	x15,x15,2
- 154:	                                                |                                               |  |   00d41413          	slli	x8,x8,0xd
- 158:	                                                |                                               |  |   00375713          	srli	x14,x14,0x3
- 15c:	                                                |                                               |  |   00876733          	or	x14,x14,x8
- 160:	                                                |                                               |  |   fee79f23          	sh	x14,-2(x15)
- 164:	                                                |                                               |  \-- feff92e3          	bne	x31,x15,148 <__stack_size+0x90>
- 168:	                                                |                                               |      02015783          	lhu	x15,32(x2)
- 16c:	                                                |                                               |      01815703          	lhu	x14,24(x2)
- 170:	                                                |                                               |      0036d693          	srli	x13,x13,0x3
- 174:	                                                |                                               |      00d79793          	slli	x15,x15,0xd
- 178:	                                                |                                               |      00d7e7b3          	or	x15,x15,x13
- 17c:	                                                |                                               |      01079413          	slli	x8,x15,0x10
- 180:	                                                |                                               |      00a777b3          	and	x15,x14,x10
- 184:	                                                |                                               |      00c75713          	srli	x14,x14,0xc
- 188:	                                                |                                               |      01045413          	srli	x8,x8,0x10
- 18c:	                                                |                                               |      00088693          	addi	x13,x17,0
- 190:	                                                |                                               |  /-- 00e3e463          	bltu	x7,x14,198 <__stack_size+0xe0>
- 194:	                                                |                                               |  |   00030693          	addi	x13,x6,0
- 198:	                                                |                                               |  \-> 00271713          	slli	x14,x14,0x2
- 19c:	                                                |                                               |      01c77713          	andi	x14,x14,28
- 1a0:	                                                |                                               |      00e6d6b3          	srl	x13,x13,x14
- 1a4:	                                                |                                               |      00f6f693          	andi	x13,x13,15
- 1a8:	                                                |                                               |      00c69693          	slli	x13,x13,0xc
- 1ac:	                                                |                                               |      00d7e7b3          	or	x15,x15,x13
- 1b0:	                                                |                                               |      01e15683          	lhu	x13,30(x2)
- 1b4:	                                                |                                               |      00165713          	srli	x14,x12,0x1
- 1b8:	                                                |                                               |      00160613          	addi	x12,x12,1
- 1bc:	                                                |                                               |      00e6c6b3          	xor	x13,x13,x14
- 1c0:	                                                |                                               |      00b44733          	xor	x14,x8,x11
- 1c4:	                                                |                                               |      01e585b3          	add	x11,x11,x30
- 1c8:	                                                |                                               |      01059593          	slli	x11,x11,0x10
- 1cc:	                                                |                                               |      00f11c23          	sh	x15,24(x2)
- 1d0:	                                                |                                               |      00d11f23          	sh	x13,30(x2)
- 1d4:	                                                |                                               |      02e11023          	sh	x14,32(x2)
- 1d8:	                                                |                                               |      0ff67613          	andi	x12,x12,255
- 1dc:	                                                |                                               |      0105d593          	srli	x11,x11,0x10
- 1e0:	                                                |                                               \----- f5d612e3          	bne	x12,x29,124 <__stack_size+0x6c>
- 1e4:	                                                |                                                      01a15703          	lhu	x14,26(x2)
- 1e8:	                                                |                                                      01079793          	slli	x15,x15,0x10
- 1ec:	                                                |                                                      a97038b7          	lui	x17,0xa9703
- 1f0:	                                                |                                                      00e7e7b3          	or	x15,x15,x14
- 1f4:	                                                |                                                      01c15703          	lhu	x14,28(x2)
- 1f8:	                                                |                                                      d21c9337          	lui	x6,0xd21c9
- 1fc:	                                                |                                                      00001f37          	lui	x30,0x1
- 200:	                                                |                                                      01071713          	slli	x14,x14,0x10
- 204:	                                                |                                                      00d76733          	or	x14,x14,x13
- 208:	                                                |                                                      01074733          	xor	x14,x14,x16
- 20c:	                                                |                                                      01c7c7b3          	xor	x15,x15,x28
- 210:	                                                |                                                      00008837          	lui	x16,0x8
- 214:	                                                |                                                      01f00513          	addi	x10,x0,31
- 218:	                                                |                                                      01f00393          	addi	x7,x0,31
- 21c:	                                                |                                                      03e00413          	addi	x8,x0,62
- 220:	                                                |                                                      03f00493          	addi	x9,x0,63
- 224:	                                                |                                                      800009b7          	lui	x19,0x80000
- 228:	                                                |                                                      64b88893          	addi	x17,x17,1611 # a970364b <__global_pointer$+0xa7702e4b>
- 22c:	                                                |                                                      fe530313          	addi	x6,x6,-27 # d21c8fe5 <__global_pointer$+0xd01c87e5>
- 230:	                                                |                                                      02000a13          	addi	x20,x0,32
- 234:	                                                |                                                      ffff0f13          	addi	x30,x30,-1 # fff <__text_end+0x1f7>
- 238:	                                                |                                                      00700a93          	addi	x21,x0,7
- 23c:	                                                |                                                      ffff8b37          	lui	x22,0xffff8
- 240:	                                                |                                            /-------> 00000593          	addi	x11,x0,0
- 244:	                                                |                                            |         00000e93          	addi	x29,x0,0
- 248:	                                                |                                            |         00000e13          	addi	x28,x0,0
- 24c:	                                                |                                            |         00000613          	addi	x12,x0,0
- 250:	                                                |                                            |  /----> 00c756b3          	srl	x13,x14,x12
- 254:	                                                |                                            |  |  /-- 00c3f663          	bgeu	x7,x12,260 <__ram_size+0x60>
- 258:	                                                |                                            |  |  |   fe060693          	addi	x13,x12,-32
- 25c:	                                                |                                            |  |  |   00d7d6b3          	srl	x13,x15,x13
- 260:	                                                |                                            |  |  \-> 0016f693          	andi	x13,x13,1
- 264:	                                                |  /-----------------------------------------|--|----- 32b3fe63          	bgeu	x7,x11,5a0 <__ram_size+0x3a0>
- 268:	                                                |  |                                         |  |      fe058b93          	addi	x23,x11,-32 # 7fe0 <Path_Planner_Dec.c.91b6c2b9+0x6c26>
- 26c:	                                                |  |                                         |  |      017696b3          	sll	x13,x13,x23
- 270:	                                                |  |                                         |  |      00de6e33          	or	x28,x28,x13
- 274:	                                                |  |  /--------------------------------------|--|----> 01060693          	addi	x13,x12,16
- 278:	                                                |  |  |                                      |  |      0ff6f693          	andi	x13,x13,255
- 27c:	                                                |  |  |  /-----------------------------------|--|----- 32d47863          	bgeu	x8,x13,5ac <__ram_size+0x3ac>
- 280:	                                                |  |  |  |                                   |  |      fd160613          	addi	x12,x12,-47
- 284:	                                                |  |  |  |                                   |  |      0ff67613          	andi	x12,x12,255
- 288:	                                                |  |  |  |  /--------------------------------|--|----> 00158593          	addi	x11,x11,1
- 28c:	                                                |  |  |  |  |                                |  \----- fc9592e3          	bne	x11,x9,250 <__ram_size+0x50>
- 290:	                                                |  |  |  |  |                                |         0137f7b3          	and	x15,x15,x19
- 294:	                                                |  |  |  |  |                                |         01c7e7b3          	or	x15,x15,x28
- 298:	                                                |  |  |  |  |                                |         00000693          	addi	x13,x0,0
- 29c:	                                                |  |  |  |  |                                |         00000613          	addi	x12,x0,0
- 2a0:	                                                |  |  |  |  |                                |         00000593          	addi	x11,x0,0
- 2a4:	                                                |  |  |  |  |                                |  /----> 00d7d733          	srl	x14,x15,x13
- 2a8:	                                                |  |  |  |  |                                |  |      00877b93          	andi	x23,x14,8
- 2ac:	                                                |  |  |  |  |                                |  |      00f77e13          	andi	x28,x14,15
- 2b0:	                                                |  |  |  |  |                                |  |      00088713          	addi	x14,x17,0
- 2b4:	                                                |  |  |  |  |                                |  |  /-- 000b9463          	bne	x23,x0,2bc <__ram_size+0xbc>
- 2b8:	                                                |  |  |  |  |                                |  |  |   00030713          	addi	x14,x6,0
- 2bc:	                                                |  |  |  |  |                                |  |  \-> 002e1e13          	slli	x28,x28,0x2
- 2c0:	                                                |  |  |  |  |                                |  |      01ce7e13          	andi	x28,x28,28
- 2c4:	                                                |  |  |  |  |                                |  |      01c75733          	srl	x14,x14,x28
- 2c8:	                                                |  |  |  |  |                                |  |      00f77713          	andi	x14,x14,15
- 2cc:	                                                |  |  |  |  |                                |  |      00d71733          	sll	x14,x14,x13
- 2d0:	                                                |  |  |  |  |                                |  |      00e5e5b3          	or	x11,x11,x14
- 2d4:	                                                |  |  |  |  |                                |  |      00ded733          	srl	x14,x29,x13
- 2d8:	                                                |  |  |  |  |                                |  |      00877b93          	andi	x23,x14,8
- 2dc:	                                                |  |  |  |  |                                |  |      00f77e13          	andi	x28,x14,15
- 2e0:	                                                |  |  |  |  |                                |  |      00088713          	addi	x14,x17,0
- 2e4:	                                                |  |  |  |  |                                |  |  /-- 000b9463          	bne	x23,x0,2ec <__ram_size+0xec>
- 2e8:	                                                |  |  |  |  |                                |  |  |   00030713          	addi	x14,x6,0
- 2ec:	                                                |  |  |  |  |                                |  |  \-> 002e1e13          	slli	x28,x28,0x2
- 2f0:	                                                |  |  |  |  |                                |  |      01ce7e13          	andi	x28,x28,28
- 2f4:	                                                |  |  |  |  |                                |  |      01c75733          	srl	x14,x14,x28
- 2f8:	                                                |  |  |  |  |                                |  |      00f77713          	andi	x14,x14,15
- 2fc:	                                                |  |  |  |  |                                |  |      00d71733          	sll	x14,x14,x13
- 300:	                                                |  |  |  |  |                                |  |      00468693          	addi	x13,x13,4
- 304:	                                                |  |  |  |  |                                |  |      00e66633          	or	x12,x12,x14
- 308:	                                                |  |  |  |  |                                |  \----- f9469ee3          	bne	x13,x20,2a4 <__ram_size+0xa4>
- 30c:	                                                |  |  |  |  |                                |         01e15783          	lhu	x15,30(x2)
- 310:	                                                |  |  |  |  |                                |         00155713          	srli	x14,x10,0x1
- 314:	                                                |  |  |  |  |                                |         02015e03          	lhu	x28,32(x2)
- 318:	                                                |  |  |  |  |                                |         00e7c7b3          	xor	x15,x15,x14
- 31c:	                                                |  |  |  |  |                                |         00f11f23          	sh	x15,30(x2)
- 320:	                                                |  |  |  |  |                                |         01815783          	lhu	x15,24(x2)
- 324:	                                                |  |  |  |  |                                |         01c84e33          	xor	x28,x16,x28
- 328:	                                                |  |  |  |  |                                |         03c11023          	sh	x28,32(x2)
- 32c:	                                                |  |  |  |  |                                |         01e7f6b3          	and	x13,x15,x30
- 330:	                                                |  |  |  |  |                                |         00c7d793          	srli	x15,x15,0xc
- 334:	                                                |  |  |  |  |                                |         00088713          	addi	x14,x17,0
- 338:	                                                |  |  |  |  |                                |     /-- 00fae463          	bltu	x21,x15,340 <__ram_size+0x140>
- 33c:	                                                |  |  |  |  |                                |     |   00030713          	addi	x14,x6,0
- 340:	                                                |  |  |  |  |                                |     \-> 00279793          	slli	x15,x15,0x2
- 344:	                                                |  |  |  |  |                                |         01c7f793          	andi	x15,x15,28
- 348:	                                                |  |  |  |  |                                |         00f75733          	srl	x14,x14,x15
- 34c:	                                                |  |  |  |  |                                |         00f77713          	andi	x14,x14,15
- 350:	                                                |  |  |  |  |                                |         00c71713          	slli	x14,x14,0xc
- 354:	                                                |  |  |  |  |                                |         00e6e6b3          	or	x13,x13,x14
- 358:	                                                |  |  |  |  |                                |         00d11c23          	sh	x13,24(x2)
- 35c:	                                                |  |  |  |  |                                |         000f8793          	addi	x15,x31,0
- 360:	                                                |  |  |  |  |                                |     /-> 0007d703          	lhu	x14,0(x15)
- 364:	                                                |  |  |  |  |                                |     |   ffe7d683          	lhu	x13,-2(x15)
- 368:	                                                |  |  |  |  |                                |     |   ffe78793          	addi	x15,x15,-2
- 36c:	                                                |  |  |  |  |                                |     |   00d75713          	srli	x14,x14,0xd
- 370:	                                                |  |  |  |  |                                |     |   00369693          	slli	x13,x13,0x3
- 374:	                                                |  |  |  |  |                                |     |   00d76733          	or	x14,x14,x13
- 378:	                                                |  |  |  |  |                                |     |   00e79123          	sh	x14,2(x15)
- 37c:	                                                |  |  |  |  |                                |     \-- fef292e3          	bne	x5,x15,360 <__ram_size+0x160>
- 380:	                                                |  |  |  |  |                                |         01815683          	lhu	x13,24(x2)
- 384:	                                                |  |  |  |  |                                |         01c15783          	lhu	x15,28(x2)
- 388:	                                                |  |  |  |  |                                |         02015703          	lhu	x14,32(x2)
- 38c:	                                                |  |  |  |  |                                |         003e1e13          	slli	x28,x28,0x3
- 390:	                                                |  |  |  |  |                                |         00d6d693          	srli	x13,x13,0xd
- 394:	                                                |  |  |  |  |                                |         01a15e83          	lhu	x29,26(x2)
- 398:	                                                |  |  |  |  |                                |         01c6e6b3          	or	x13,x13,x28
- 39c:	                                                |  |  |  |  |                                |         01e15e03          	lhu	x28,30(x2)
- 3a0:	                                                |  |  |  |  |                                |         01069693          	slli	x13,x13,0x10
- 3a4:	                                                |  |  |  |  |                                |         0106d693          	srli	x13,x13,0x10
- 3a8:	                                                |  |  |  |  |                                |         00f11c23          	sh	x15,24(x2)
- 3ac:	                                                |  |  |  |  |                                |         00e11e23          	sh	x14,28(x2)
- 3b0:	                                                |  |  |  |  |                                |         01079793          	slli	x15,x15,0x10
- 3b4:	                                                |  |  |  |  |                                |         01071713          	slli	x14,x14,0x10
- 3b8:	                                                |  |  |  |  |                                |         fff50513          	addi	x10,x10,-1
- 3bc:	                                                |  |  |  |  |                                |         01680833          	add	x16,x16,x22
- 3c0:	                                                |  |  |  |  |                                |         01c7e7b3          	or	x15,x15,x28
- 3c4:	                                                |  |  |  |  |                                |         00d76733          	or	x14,x14,x13
- 3c8:	                                                |  |  |  |  |                                |         01081813          	slli	x16,x16,0x10
- 3cc:	                                                |  |  |  |  |                                |         01c11d23          	sh	x28,26(x2)
- 3d0:	                                                |  |  |  |  |                                |         00d11f23          	sh	x13,30(x2)
- 3d4:	                                                |  |  |  |  |                                |         03d11023          	sh	x29,32(x2)
- 3d8:	                                                |  |  |  |  |                                |         0ff57513          	andi	x10,x10,255
- 3dc:	                                                |  |  |  |  |                                |         00b7c7b3          	xor	x15,x15,x11
- 3e0:	                                                |  |  |  |  |                                |         00c74733          	xor	x14,x14,x12
- 3e4:	                                                |  |  |  |  |                                |         01085813          	srli	x16,x16,0x10
- 3e8:	                                                |  |  |  |  |                                \-------- e4051ce3          	bne	x10,x0,240 <__ram_size+0x40>
- 3ec:	                                                |  |  |  |  |                                          01010613          	addi	x12,x2,16
- 3f0:	                                                |  |  |  |  |                                          01800693          	addi	x13,x0,24
- 3f4:	                                                |  |  |  |  |                                          ff800593          	addi	x11,x0,-8
- 3f8:	                                                |  |  |  |  |                                      /-> 00d7d533          	srl	x10,x15,x13
- 3fc:	                                                |  |  |  |  |                                      |   00a60023          	sb	x10,0(x12)
- 400:	                                                |  |  |  |  |                                      |   00d75533          	srl	x10,x14,x13
- 404:	                                                |  |  |  |  |                                      |   00a60223          	sb	x10,4(x12)
- 408:	                                                |  |  |  |  |                                      |   ff868693          	addi	x13,x13,-8
- 40c:	                                                |  |  |  |  |                                      |   00160613          	addi	x12,x12,1
- 410:	                                                |  |  |  |  |                                      \-- feb694e3          	bne	x13,x11,3f8 <__ram_size+0x1f8>
- 414:	                                                |  |  |  |  |                                          01114a83          	lbu	x21,17(x2)
- 418:	                                                |  |  |  |  |                                          01214c03          	lbu	x24,18(x2)
- 41c:	                                                |  |  |  |  |                                          01314b83          	lbu	x23,19(x2)
- 420:	                                                |  |  |  |  |                                          01414c83          	lbu	x25,20(x2)
- 424:	                                                |  |  |  |  |                                          01514b03          	lbu	x22,21(x2)
- 428:	                                                |  |  |  |  |                                          01714483          	lbu	x9,23(x2)
- 42c:	                                                |  |  |  |  |  /-------------------------------------> 020007b7          	lui	x15,0x2000
- 430:	                                                |  |  |  |  |  |                                       02000737          	lui	x14,0x2000
- 434:	                                                |  |  |  |  |  |                                       07078793          	addi	x15,x15,112 # 2000070 <__bss_end+0x70>
- 438:	                                                |  |  |  |  |  |                                       fe0005b7          	lui	x11,0xfe000
- 43c:	                                                |  |  |  |  |  |                                       fff00613          	addi	x12,x0,-1
- 440:	                                                |  |  |  |  |  |                                       09870713          	addi	x14,x14,152 # 2000098 <__bss_end+0x98>
- 444:	                                                |  |  |  |  |  |                                   /-> 00179693          	slli	x13,x15,0x1
- 448:	                                                |  |  |  |  |  |                                   |   00d586b3          	add	x13,x11,x13
- 44c:	                                                |  |  |  |  |  |                                   |   f4c69023          	sh	x12,-192(x13)
- 450:	                                                |  |  |  |  |  |                                   |   00078023          	sb	x0,0(x15)
- 454:	                                                |  |  |  |  |  |                                   |   02078423          	sb	x0,40(x15)
- 458:	                                                |  |  |  |  |  |                                   |   00178793          	addi	x15,x15,1
- 45c:	                                                |  |  |  |  |  |                                   \-- fee794e3          	bne	x15,x14,444 <__ram_size+0x244>
- 460:	                                                |  |  |  |  |  |                                       00191713          	slli	x14,x18,0x1
- 464:	                                                |  |  |  |  |  |                                       020007b7          	lui	x15,0x2000
- 468:	                                                |  |  |  |  |  |                                       00e787b3          	add	x15,x15,x14
- 46c:	                                                |  |  |  |  |  |                                       00010a37          	lui	x20,0x10
- 470:	                                                |  |  |  |  |  |                                       02079023          	sh	x0,32(x15) # 2000020 <__bss_end+0x20>
- 474:	                                                |  |  |  |  |  |                                       020009b7          	lui	x19,0x2000
- 478:	                                                |  |  |  |  |  |                                       fffa0a13          	addi	x20,x20,-1 # ffff <Path_Planner_Dec.c.91b6c2b9+0xec45>
- 47c:	                                                |  |  |  |  |  |                                       02500d93          	addi	x27,x0,37
- 480:	                                    /-----------|--|--|--|--|--|-------------------------------------> 00100d13          	addi	x26,x0,1
- 484:	   /--------------------------------|-----------|--|--|--|--|--|-------------------------------------> 00100793          	addi	x15,x0,1
- 488:	   |                                |           |  |  |  |  |  |                                       00000413          	addi	x8,x0,0
- 48c:	   |                                |           |  |  |  |  |  |                                   /-> 00f98733          	add	x14,x19,x15
- 490:	   |                                |           |  |  |  |  |  |                                   |   09874703          	lbu	x14,152(x14)
- 494:	   |                                |           |  |  |  |  |  |  /--------------------------------|-- 00071e63          	bne	x14,x0,4b0 <__ram_size+0x2b0>
- 498:	   |                                |           |  |  |  |  |  |  |                                |   00179713          	slli	x14,x15,0x1
- 49c:	   |                                |           |  |  |  |  |  |  |                                |   00e98733          	add	x14,x19,x14
- 4a0:	   |                                |           |  |  |  |  |  |  |                                |   02075683          	lhu	x13,32(x14)
- 4a4:	   |                                |           |  |  |  |  |  |  +--------------------------------|-- 01468663          	beq	x13,x20,4b0 <__ram_size+0x2b0>
- 4a8:	   |                                |           |  |  |  |  |  |  |           /--------------------|-- 12041663          	bne	x8,x0,5d4 <__ram_size+0x3d4>
- 4ac:	   |                                |           |  |  |  |  |  |  |        /--|--------------------|-> 0ff7f413          	andi	x8,x15,255
- 4b0:	   |                                |           |  |  |  |  |  |  >--------|--|--------------------|-> 00178793          	addi	x15,x15,1
- 4b4:	   |                                |           |  |  |  |  |  |  |        |  |                    \-- fdb79ce3          	bne	x15,x27,48c <__ram_size+0x28c>
- 4b8:	/--|--------------------------------|-----------|--|--|--|--|--|--|--------|--|----------------------- 6c040a63          	beq	x8,x0,b8c <__ram_size+0x98c>
- 4bc:	+--|--------------------------------|-----------|--|--|--|--|--|--|--------|--|----------------------- 6c848863          	beq	x9,x8,b8c <__ram_size+0x98c>
- 4c0:	|  |                                |           |  |  |  |  |  |  |        |  |                        008987b3          	add	x15,x19,x8
- 4c4:	|  |                                |           |  |  |  |  |  |  |        |  |                        09a78c23          	sb	x26,152(x15)
- 4c8:	|  |                                |           |  |  |  |  |  |  |        |  |                        02400793          	addi	x15,x0,36
- 4cc:	|  |                                |           |  |  |  |  |  |  |        |  |                    /-- 10f41e63          	bne	x8,x15,5e8 <__ram_size+0x3e8>
- 4d0:	|  |                                |           |  |  |  |  |  |  |        |  |                    |   06400613          	addi	x12,x0,100
- 4d4:	|  |                                |           |  |  |  |  |  |  |        |  |                    |   02400593          	addi	x11,x0,36
- 4d8:	|  |                                |           |  |  |  |  |  |  |        |  |                    |   00100513          	addi	x10,x0,1
- 4dc:	|  |                                |           |  |  |  |  |  |  |        |  |                    |   7ec000ef          	jal	x1,cc8 <rel.constprop.0>
- 4e0:	|  |                          /-----|-----------|--|--|--|--|--|--|--------|--|--------------------|-> 00300793          	addi	x15,x0,3
- 4e4:	|  |                          |     |           |  |  |  |  |  |  |        |  |                 /--|-- 12f41463          	bne	x8,x15,60c <__ram_size+0x40c>
- 4e8:	|  |                          |     |           |  |  |  |  |  |  |        |  |                 |  |   00500613          	addi	x12,x0,5
- 4ec:	|  |                          |     |           |  |  |  |  |  |  |        |  |                 |  |   00300593          	addi	x11,x0,3
- 4f0:	|  |                          |     |           |  |  |  |  |  |  |        |  |                 |  |   00600513          	addi	x10,x0,6
- 4f4:	|  |                          |     |           |  |  |  |  |  |  |        |  |                 |  |   7d4000ef          	jal	x1,cc8 <rel.constprop.0>
- 4f8:	|  |                       /--|-----|-----------|--|--|--|--|--|--|--------|--|-----------------|--|-> 00b00793          	addi	x15,x0,11
- 4fc:	|  |                       |  |     |           |  |  |  |  |  |  |        |  |              /--|--|-- 12f41463          	bne	x8,x15,624 <__ram_size+0x424>
- 500:	|  |                       |  |     |           |  |  |  |  |  |  |        |  |              |  |  |   00500613          	addi	x12,x0,5
- 504:	|  |                       |  |     |           |  |  |  |  |  |  |        |  |              |  |  |   00b00593          	addi	x11,x0,11
- 508:	|  |                       |  |     |           |  |  |  |  |  |  |        |  |              |  |  |   00800513          	addi	x10,x0,8
- 50c:	|  |                       |  |     |           |  |  |  |  |  |  |        |  |              |  |  |   7bc000ef          	jal	x1,cc8 <rel.constprop.0>
- 510:	|  |                    /--|--|-----|-----------|--|--|--|--|--|--|--------|--|--------------|--|--|-> 00f00793          	addi	x15,x0,15
- 514:	|  |                    |  |  |     |           |  |  |  |  |  |  |        |  |           /--|--|--|-- 12f41463          	bne	x8,x15,63c <__ram_size+0x43c>
- 518:	|  |                    |  |  |     |           |  |  |  |  |  |  |        |  |           |  |  |  |   00500613          	addi	x12,x0,5
- 51c:	|  |                    |  |  |     |           |  |  |  |  |  |  |        |  |           |  |  |  |   00f00593          	addi	x11,x0,15
- 520:	|  |                    |  |  |     |           |  |  |  |  |  |  |        |  |           |  |  |  |   00e00513          	addi	x10,x0,14
- 524:	|  |                    |  |  |     |           |  |  |  |  |  |  |        |  |           |  |  |  |   7a4000ef          	jal	x1,cc8 <rel.constprop.0>
- 528:	|  |                 /--|--|--|-----|-----------|--|--|--|--|--|--|--------|--|-----------|--|--|--|-> 01400793          	addi	x15,x0,20
- 52c:	|  |                 |  |  |  |     |           |  |  |  |  |  |  |        |  |        /--|--|--|--|-- 12f41463          	bne	x8,x15,654 <__ram_size+0x454>
- 530:	|  |                 |  |  |  |     |           |  |  |  |  |  |  |        |  |        |  |  |  |  |   00500613          	addi	x12,x0,5
- 534:	|  |                 |  |  |  |     |           |  |  |  |  |  |  |        |  |        |  |  |  |  |   01400593          	addi	x11,x0,20
- 538:	|  |                 |  |  |  |     |           |  |  |  |  |  |  |        |  |        |  |  |  |  |   01500513          	addi	x10,x0,21
- 53c:	|  |                 |  |  |  |     |           |  |  |  |  |  |  |        |  |        |  |  |  |  |   78c000ef          	jal	x1,cc8 <rel.constprop.0>
- 540:	|  |              /--|--|--|--|-----|-----------|--|--|--|--|--|--|--------|--|--------|--|--|--|--|-> 01a00793          	addi	x15,x0,26
- 544:	|  |              |  |  |  |  |     |           |  |  |  |  |  |  |        |  |     /--|--|--|--|--|-- 12f41463          	bne	x8,x15,66c <__ram_size+0x46c>
- 548:	|  |              |  |  |  |  |     |           |  |  |  |  |  |  |        |  |     |  |  |  |  |  |   00500613          	addi	x12,x0,5
- 54c:	|  |              |  |  |  |  |     |           |  |  |  |  |  |  |        |  |     |  |  |  |  |  |   01a00593          	addi	x11,x0,26
- 550:	|  |              |  |  |  |  |     |           |  |  |  |  |  |  |        |  |     |  |  |  |  |  |   01700513          	addi	x10,x0,23
- 554:	|  |              |  |  |  |  |     |           |  |  |  |  |  |  |        |  |     |  |  |  |  |  |   774000ef          	jal	x1,cc8 <rel.constprop.0>
- 558:	|  |           /--|--|--|--|--|-----|-----------|--|--|--|--|--|--|--------|--|-----|--|--|--|--|--|-> 01c00793          	addi	x15,x0,28
- 55c:	|  |           |  |  |  |  |  |     |           |  |  |  |  |  |  |        |  |  /--|--|--|--|--|--|-- 12f41463          	bne	x8,x15,684 <__ram_size+0x484>
- 560:	|  |           |  |  |  |  |  |     |           |  |  |  |  |  |  |        |  |  |  |  |  |  |  |  |   00500613          	addi	x12,x0,5
- 564:	|  |           |  |  |  |  |  |     |           |  |  |  |  |  |  |        |  |  |  |  |  |  |  |  |   01c00593          	addi	x11,x0,28
- 568:	|  |           |  |  |  |  |  |     |           |  |  |  |  |  |  |        |  |  |  |  |  |  |  |  |   01f00513          	addi	x10,x0,31
- 56c:	|  |           |  |  |  |  |  |     |           |  |  |  |  |  |  |        |  |  |  |  |  |  |  |  |   75c000ef          	jal	x1,cc8 <rel.constprop.0>
- 570:	|  |        /--|--|--|--|--|--|-----|-----------|--|--|--|--|--|--|--------|--|--|--|--|--|--|--|--|-> 00900793          	addi	x15,x0,9
- 574:	|  |        |  |  |  |  |  |  |     |           |  |  |  |  |  |  |     /--|--|--|--|--|--|--|--|--|-- 12f41c63          	bne	x8,x15,6ac <__ram_size+0x4ac>
- 578:	|  |        |  |  |  |  |  |  |     |           |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |   00700613          	addi	x12,x0,7
- 57c:	|  |        |  |  |  |  |  |  |     |           |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |   00900593          	addi	x11,x0,9
- 580:	|  |        |  |  |  |  |  |  |     |           |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |   00b00513          	addi	x10,x0,11
- 584:	|  |        |  |  |  |  |  |  |     |           |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |   744000ef          	jal	x1,cc8 <rel.constprop.0>
- 588:	|  |     /--|--|--|--|--|--|--|-----|-----------|--|--|--|--|--|--|-----|--|--|--|--|--|--|--|--|--|-> 01900793          	addi	x15,x0,25
- 58c:	|  |     |  |  |  |  |  |  |  |     |           |  |  |  |  |  |  |  /--|--|--|--|--|--|--|--|--|--|-- 14f41463          	bne	x8,x15,6d4 <__ram_size+0x4d4>
- 590:	|  |     |  |  |  |  |  |  |  |     |           |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |   00700613          	addi	x12,x0,7
- 594:	|  |     |  |  |  |  |  |  |  |     |           |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |   01900593          	addi	x11,x0,25
- 598:	|  |     |  |  |  |  |  |  |  |     |           |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |   01700513          	addi	x10,x0,23
- 59c:	|  |  /--|--|--|--|--|--|--|--|-----|-----------|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|-- 50c0006f          	jal	x0,aa8 <__ram_size+0x8a8>
- 5a0:	|  |  |  |  |  |  |  |  |  |  |     |           |  \--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|-> 00b696b3          	sll	x13,x13,x11
- 5a4:	|  |  |  |  |  |  |  |  |  |  |     |           |     |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |   00deeeb3          	or	x29,x29,x13
- 5a8:	|  |  |  |  |  |  |  |  |  |  |     |           |     \--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|-- ccdff06f          	jal	x0,274 <__ram_size+0x74>
- 5ac:	|  |  |  |  |  |  |  |  |  |  |     |           |        \--|--|--|--|--|--|--|--|--|--|--|--|--|--|-> 00068613          	addi	x12,x13,0
- 5b0:	|  |  |  |  |  |  |  |  |  |  |     |           |           \--|--|--|--|--|--|--|--|--|--|--|--|--|-- cd9ff06f          	jal	x0,288 <__ram_size+0x88>
- 5b4:	|  |  |  |  |  |  |  |  |  |  |     |           \--------------|--|--|--|--|--|--|--|--|--|--|--|--|-> 00c7c483          	lbu	x9,12(x15)
- 5b8:	|  |  |  |  |  |  |  |  |  |  |     |                          |  |  |  |  |  |  |  |  |  |  |  |  |   00000b13          	addi	x22,x0,0
- 5bc:	|  |  |  |  |  |  |  |  |  |  |     |                          |  |  |  |  |  |  |  |  |  |  |  |  |   00000c93          	addi	x25,x0,0
- 5c0:	|  |  |  |  |  |  |  |  |  |  |     |                          |  |  |  |  |  |  |  |  |  |  |  |  |   0ff4f493          	andi	x9,x9,255
- 5c4:	|  |  |  |  |  |  |  |  |  |  |     |                          |  |  |  |  |  |  |  |  |  |  |  |  |   00000b93          	addi	x23,x0,0
- 5c8:	|  |  |  |  |  |  |  |  |  |  |     |                          |  |  |  |  |  |  |  |  |  |  |  |  |   00000c13          	addi	x24,x0,0
- 5cc:	|  |  |  |  |  |  |  |  |  |  |     |                          |  |  |  |  |  |  |  |  |  |  |  |  |   00000a93          	addi	x21,x0,0
- 5d0:	|  |  |  |  |  |  |  |  |  |  |     |                          \--|--|--|--|--|--|--|--|--|--|--|--|-- e5dff06f          	jal	x0,42c <__ram_size+0x22c>
- 5d4:	|  |  |  |  |  |  |  |  |  |  |     |                             |  |  |  |  \--|--|--|--|--|--|--|-> 00141713          	slli	x14,x8,0x1
- 5d8:	|  |  |  |  |  |  |  |  |  |  |     |                             |  |  |  |     |  |  |  |  |  |  |   00e98733          	add	x14,x19,x14
- 5dc:	|  |  |  |  |  |  |  |  |  |  |     |                             |  |  |  |     |  |  |  |  |  |  |   02075703          	lhu	x14,32(x14)
- 5e0:	|  |  |  |  |  |  |  |  |  |  |     |                             |  |  |  \-----|--|--|--|--|--|--|-- ece6e6e3          	bltu	x13,x14,4ac <__ram_size+0x2ac>
- 5e4:	|  |  |  |  |  |  |  |  |  |  |     |                             \--|--|--------|--|--|--|--|--|--|-- ecdff06f          	jal	x0,4b0 <__ram_size+0x2b0>
- 5e8:	|  |  |  |  |  |  |  |  |  |  |     |              /-----------------|--|--------|--|--|--|--|--|--\-X 17a41663          	bne	x8,x26,754 <__ram_size+0x554>
- 5ec:	|  |  |  |  |  |  |  |  |  |  |     |              |                 |  |        |  |  |  |  |  |      06400613          	addi	x12,x0,100
- 5f0:	|  |  |  |  |  |  |  |  |  |  |     |              |                 |  |        |  |  |  |  |  |      00100593          	addi	x11,x0,1
- 5f4:	|  |  |  |  |  |  |  |  |  |  |     |              |                 |  |        |  |  |  |  |  |      02400513          	addi	x10,x0,36
- 5f8:	|  |  |  |  |  |  |  |  |  |  |     |              |                 |  |        |  |  |  |  |  |      6d0000ef          	jal	x1,cc8 <rel.constprop.0>
- 5fc:	|  |  |  |  |  |  |  |  |  |  |     |              |                 |  |        |  |  |  |  |  |      00500613          	addi	x12,x0,5
- 600:	|  |  |  |  |  |  |  |  |  |  |     |              |                 |  |        |  |  |  |  |  |      00100593          	addi	x11,x0,1
- 604:	|  |  |  |  |  |  |  |  |  |  |     |              |                 |  |        |  |  |  |  |  |      00500513          	addi	x10,x0,5
- 608:	|  |  |  |  |  |  |  |  |  |  |     |              |                 |  |        |  |  |  |  |  |      6c0000ef          	jal	x1,cc8 <rel.constprop.0>
- 60c:	|  |  |  |  |  |  |  |  |  |  |     |              |                 |  |        |  |  |  |  |  \----> 00600793          	addi	x15,x0,6
- 610:	|  |  |  |  |  |  |  |  |  |  |     |              |                 |  |     /--|--|--|--|--|-------- 14f41e63          	bne	x8,x15,76c <__ram_size+0x56c>
- 614:	|  |  |  |  |  |  |  |  |  |  |     |              |                 |  |     |  |  |  |  |  |         00500613          	addi	x12,x0,5
- 618:	|  |  |  |  |  |  |  |  |  |  |     |              |                 |  |     |  |  |  |  |  |         00600593          	addi	x11,x0,6
- 61c:	|  |  |  |  |  |  |  |  |  |  |     |              |                 |  |     |  |  |  |  |  |         00300513          	addi	x10,x0,3
- 620:	|  |  |  |  |  |  |  |  |  |  |     |              |                 |  |     |  |  |  |  |  |         6a8000ef          	jal	x1,cc8 <rel.constprop.0>
- 624:	|  |  |  |  |  |  |  |  |  |  |     |              |                 |  |     |  |  |  |  |  \-------> 00900793          	addi	x15,x0,9
- 628:	|  |  |  |  |  |  |  |  |  |  |     |              |              /--|--|-----|--|--|--|--|----------- 14f41e63          	bne	x8,x15,784 <__ram_size+0x584>
- 62c:	|  |  |  |  |  |  |  |  |  |  |     |              |              |  |  |     |  |  |  |  |            00500613          	addi	x12,x0,5
- 630:	|  |  |  |  |  |  |  |  |  |  |     |              |              |  |  |     |  |  |  |  |            00900593          	addi	x11,x0,9
- 634:	|  |  |  |  |  |  |  |  |  |  |     |              |              |  |  |     |  |  |  |  |            00c00513          	addi	x10,x0,12
- 638:	|  |  |  |  |  |  |  |  |  |  |     |              |              |  |  |     |  |  |  |  |            690000ef          	jal	x1,cc8 <rel.constprop.0>
- 63c:	|  |  |  |  |  |  |  |  |  |  |     |              |              |  |  |     |  |  |  |  \----------> 01000793          	addi	x15,x0,16
- 640:	|  |  |  |  |  |  |  |  |  |  |     |              |           /--|--|--|-----|--|--|--|-------------- 14f41e63          	bne	x8,x15,79c <__ram_size+0x59c>
- 644:	|  |  |  |  |  |  |  |  |  |  |     |              |           |  |  |  |     |  |  |  |               00500613          	addi	x12,x0,5
- 648:	|  |  |  |  |  |  |  |  |  |  |     |              |           |  |  |  |     |  |  |  |               01000593          	addi	x11,x0,16
- 64c:	|  |  |  |  |  |  |  |  |  |  |     |              |           |  |  |  |     |  |  |  |               01100513          	addi	x10,x0,17
- 650:	|  |  |  |  |  |  |  |  |  |  |     |              |           |  |  |  |     |  |  |  |               678000ef          	jal	x1,cc8 <rel.constprop.0>
- 654:	|  |  |  |  |  |  |  |  |  |  |     |              |           |  |  |  |     |  |  |  \-------------> 01500793          	addi	x15,x0,21
- 658:	|  |  |  |  |  |  |  |  |  |  |     |              |        /--|--|--|--|-----|--|--|----------------- 14f41e63          	bne	x8,x15,7b4 <__ram_size+0x5b4>
- 65c:	|  |  |  |  |  |  |  |  |  |  |     |              |        |  |  |  |  |     |  |  |                  00500613          	addi	x12,x0,5
- 660:	|  |  |  |  |  |  |  |  |  |  |     |              |        |  |  |  |  |     |  |  |                  01500593          	addi	x11,x0,21
- 664:	|  |  |  |  |  |  |  |  |  |  |     |              |        |  |  |  |  |     |  |  |                  01400513          	addi	x10,x0,20
- 668:	|  |  |  |  |  |  |  |  |  |  |     |              |        |  |  |  |  |     |  |  |                  660000ef          	jal	x1,cc8 <rel.constprop.0>
- 66c:	|  |  |  |  |  |  |  |  |  |  |     |              |        |  |  |  |  |     |  |  \----------------> 01800793          	addi	x15,x0,24
- 670:	|  |  |  |  |  |  |  |  |  |  |     |              |     /--|--|--|--|--|-----|--|-------------------- 14f41e63          	bne	x8,x15,7cc <__ram_size+0x5cc>
- 674:	|  |  |  |  |  |  |  |  |  |  |     |              |     |  |  |  |  |  |     |  |                     00500613          	addi	x12,x0,5
- 678:	|  |  |  |  |  |  |  |  |  |  |     |              |     |  |  |  |  |  |     |  |                     01800593          	addi	x11,x0,24
- 67c:	|  |  |  |  |  |  |  |  |  |  |     |              |     |  |  |  |  |  |     |  |                     01b00513          	addi	x10,x0,27
- 680:	|  |  |  |  |  |  |  |  |  |  |     |              |     |  |  |  |  |  |     |  |                     648000ef          	jal	x1,cc8 <rel.constprop.0>
- 684:	|  |  |  |  |  |  |  |  |  |  |     |              |     |  |  |  |  |  |     |  \-------------------> 01f00793          	addi	x15,x0,31
- 688:	|  |  |  |  |  |  |  |  |  |  |     |              |  /--|--|--|--|--|--|-----|----------------------- 14f41e63          	bne	x8,x15,7e4 <__ram_size+0x5e4>
- 68c:	|  |  |  |  |  |  |  |  |  |  |     |              |  |  |  |  |  |  |  |     |                        00500613          	addi	x12,x0,5
- 690:	|  |  |  |  |  |  |  |  |  |  |     |              |  |  |  |  |  |  |  |     |                        01f00593          	addi	x11,x0,31
- 694:	|  |  |  |  |  |  |  |  |  |  |     |              |  |  |  |  |  |  |  |     |                        01c00513          	addi	x10,x0,28
- 698:	|  |  |  |  |  |  |  |  |  |  |     |              |  |  |  |  |  |  |  |     |                        630000ef          	jal	x1,cc8 <rel.constprop.0>
- 69c:	|  |  |  |  |  |  |  |  |  |  |     |              |  |  |  |  |  |  |  |     |                        00500613          	addi	x12,x0,5
- 6a0:	|  |  |  |  |  |  |  |  |  |  |     |              |  |  |  |  |  |  |  |     |                        01f00593          	addi	x11,x0,31
- 6a4:	|  |  |  |  |  |  |  |  |  |  |     |              |  |  |  |  |  |  |  |     |                        02200513          	addi	x10,x0,34
- 6a8:	|  |  |  |  |  |  |  |  |  |  |     |              |  |  |  |  |  |  |  |     |                        620000ef          	jal	x1,cc8 <rel.constprop.0>
- 6ac:	|  |  |  |  |  |  |  |  |  |  |     |              |  |  |  |  |  |  |  \-----|----------------------> 00b00793          	addi	x15,x0,11
- 6b0:	|  |  |  |  |  |  |  |  |  |  |     |              |  |  |  |  |  |  |     /--|----------------------- 14f41663          	bne	x8,x15,7fc <__ram_size+0x5fc>
- 6b4:	|  |  |  |  |  |  |  |  |  |  |     |              |  |  |  |  |  |  |     |  |                        00700613          	addi	x12,x0,7
- 6b8:	|  |  |  |  |  |  |  |  |  |  |     |              |  |  |  |  |  |  |     |  |                        00b00593          	addi	x11,x0,11
- 6bc:	|  |  |  |  |  |  |  |  |  |  |     |              |  |  |  |  |  |  |     |  |                        00900513          	addi	x10,x0,9
- 6c0:	|  |  |  |  |  |  |  |  |  |  |     |              |  |  |  |  |  |  |     |  |                        608000ef          	jal	x1,cc8 <rel.constprop.0>
- 6c4:	|  |  |  |  |  |  |  |  |  |  |     |              |  |  |  |  |  |  |     |  |                        00700613          	addi	x12,x0,7
- 6c8:	|  |  |  |  |  |  |  |  |  |  |     |              |  |  |  |  |  |  |     |  |                        00b00593          	addi	x11,x0,11
- 6cc:	|  |  |  |  |  |  |  |  |  |  |     |              |  |  |  |  |  |  |     |  |                        01300513          	addi	x10,x0,19
- 6d0:	|  |  |  |  |  |  |  |  |  |  |     |              |  |  |  |  |  |  |     |  |                        5f8000ef          	jal	x1,cc8 <rel.constprop.0>
- 6d4:	|  |  |  |  |  |  |  |  |  |  |     |              |  |  |  |  |  |  \-----|--|----------------------> 00500793          	addi	x15,x0,5
- 6d8:	|  |  |  |  |  |  |  |  |  |  |     |              |  |  |  |  |  |        |  |                    /-- 12f41e63          	bne	x8,x15,814 <__ram_size+0x614>
- 6dc:	|  |  |  |  |  |  |  |  |  |  |     |              |  |  |  |  |  |        |  |                    |   00b00613          	addi	x12,x0,11
- 6e0:	|  |  |  |  |  |  |  |  |  |  |     |              |  |  |  |  |  |        |  |                    |   00500593          	addi	x11,x0,5
- 6e4:	|  |  |  |  |  |  |  |  |  |  |     |              |  |  |  |  |  |        |  |                    |   00700513          	addi	x10,x0,7
- 6e8:	|  |  |  |  |  |  |  |  |  |  |     |              |  |  |  |  |  |        |  |                    |   5e0000ef          	jal	x1,cc8 <rel.constprop.0>
- 6ec:	|  |  |  |  |  |  |  |  |  |  |     |              |  |  |  |  |  |        |  |                    |   00b00613          	addi	x12,x0,11
- 6f0:	|  |  |  |  |  |  |  |  |  |  |     |              |  |  |  |  |  |        |  |                    |   00500593          	addi	x11,x0,5
- 6f4:	|  |  |  |  |  |  |  |  |  |  |     |              |  |  |  |  |  |        |  |                    |   00800513          	addi	x10,x0,8
- 6f8:	|  |  |  |  |  |  |  |  |  |  |     |              |  |  |  |  |  |        |  |                    |   5d0000ef          	jal	x1,cc8 <rel.constprop.0>
- 6fc:	|  |  |  |  |  |  |  |  |  |  |     |        /-----|--|--|--|--|--|--------|--|--------------------|-> 01b00793          	addi	x15,x0,27
- 700:	|  |  |  |  |  |  |  |  |  |  |     |        |     |  |  |  |  |  |        |  |                 /--|-- 12f41e63          	bne	x8,x15,83c <__ram_size+0x63c>
- 704:	|  |  |  |  |  |  |  |  |  |  |     |        |     |  |  |  |  |  |        |  |                 |  |   00b00613          	addi	x12,x0,11
- 708:	|  |  |  |  |  |  |  |  |  |  |     |        |     |  |  |  |  |  |        |  |                 |  |   01b00593          	addi	x11,x0,27
- 70c:	|  |  |  |  |  |  |  |  |  |  |     |        |     |  |  |  |  |  |        |  |                 |  |   01400513          	addi	x10,x0,20
- 710:	|  |  |  |  |  |  |  |  |  |  |     |        |     |  |  |  |  |  |        |  |                 |  |   5b8000ef          	jal	x1,cc8 <rel.constprop.0>
- 714:	|  |  |  |  |  |  |  |  |  |  |     |        |     |  |  |  |  |  |        |  |                 |  |   00b00613          	addi	x12,x0,11
- 718:	|  |  |  |  |  |  |  |  |  |  |     |        |     |  |  |  |  |  |        |  |                 |  |   01b00593          	addi	x11,x0,27
- 71c:	|  |  |  |  |  |  |  |  |  |  |     |        |     |  |  |  |  |  |        |  |                 |  |   01d00513          	addi	x10,x0,29
- 720:	|  |  |  |  |  |  |  |  |  |  |     |        |     |  |  |  |  |  |        |  |                 |  |   5a8000ef          	jal	x1,cc8 <rel.constprop.0>
- 724:	|  |  |  |  |  |  |  |  |  |  |     |     /--|-----|--|--|--|--|--|--------|--|-----------------|--|-> 00600793          	addi	x15,x0,6
- 728:	|  |  |  |  |  |  |  |  |  |  |     |     |  |     |  |  |  |  |  |        |  |              /--|--|-- 12f41e63          	bne	x8,x15,864 <__ram_size+0x664>
- 72c:	|  |  |  |  |  |  |  |  |  |  |     |     |  |     |  |  |  |  |  |        |  |              |  |  |   00f00613          	addi	x12,x0,15
- 730:	|  |  |  |  |  |  |  |  |  |  |     |     |  |     |  |  |  |  |  |        |  |              |  |  |   00600593          	addi	x11,x0,6
- 734:	|  |  |  |  |  |  |  |  |  |  |     |     |  |     |  |  |  |  |  |        |  |              |  |  |   00100513          	addi	x10,x0,1
- 738:	|  |  |  |  |  |  |  |  |  |  |     |     |  |     |  |  |  |  |  |        |  |              |  |  |   590000ef          	jal	x1,cc8 <rel.constprop.0>
- 73c:	|  |  |  |  |  |  |  |  |  |  |     |     |  |  /--|--|--|--|--|--|--------|--|--------------|--|--|-> 00d00793          	addi	x15,x0,13
- 740:	|  |  |  |  |  |  |  |  |  |  |     |  /--|--|--|--|--|--|--|--|--|--------|--|--------------|--|--|-- 3cf41263          	bne	x8,x15,b04 <__ram_size+0x904>
- 744:	|  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |        |  |              |  |  |   01300613          	addi	x12,x0,19
- 748:	|  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |        |  |              |  |  |   00d00593          	addi	x11,x0,13
- 74c:	|  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |        |  |              |  |  |   01e00513          	addi	x10,x0,30
- 750:	|  |  |  |  |  |  |  |  |  |  |  /--|--|--|--|--|--|--|--|--|--|--|--------|--|--------------|--|--|-- 2740006f          	jal	x0,9c4 <__ram_size+0x7c4>
- 754:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  \--|--|--|--|--|--------|--|--------------|--|--|-> 00500793          	addi	x15,x0,5
- 758:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |        |  |           /--|--|--|-- 14f41463          	bne	x8,x15,8a0 <__ram_size+0x6a0>
- 75c:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |        |  |           |  |  |  |   00500613          	addi	x12,x0,5
- 760:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |        |  |           |  |  |  |   00500593          	addi	x11,x0,5
- 764:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |        |  |           |  |  |  |   00100513          	addi	x10,x0,1
- 768:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |        |  |           |  |  |  |   560000ef          	jal	x1,cc8 <rel.constprop.0>
- 76c:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |        |  \-----------|--|--|--|-> 00700793          	addi	x15,x0,7
- 770:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |        |           /--|--|--|--|-- 14f41463          	bne	x8,x15,8b8 <__ram_size+0x6b8>
- 774:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |        |           |  |  |  |  |   00500613          	addi	x12,x0,5
- 778:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |        |           |  |  |  |  |   00700593          	addi	x11,x0,7
- 77c:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |        |           |  |  |  |  |   00a00513          	addi	x10,x0,10
- 780:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |        |           |  |  |  |  |   548000ef          	jal	x1,cc8 <rel.constprop.0>
- 784:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  \--------|-----------|--|--|--|--|-> 00c00793          	addi	x15,x0,12
- 788:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |           |        /--|--|--|--|--|-- 14f41463          	bne	x8,x15,8d0 <__ram_size+0x6d0>
- 78c:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |           |        |  |  |  |  |  |   00500613          	addi	x12,x0,5
- 790:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |           |        |  |  |  |  |  |   00c00593          	addi	x11,x0,12
- 794:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |           |        |  |  |  |  |  |   00900513          	addi	x10,x0,9
- 798:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |           |        |  |  |  |  |  |   530000ef          	jal	x1,cc8 <rel.constprop.0>
- 79c:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |  |  |  \-----------|--------|--|--|--|--|--|-> 01100793          	addi	x15,x0,17
- 7a0:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |  |  |              |     /--|--|--|--|--|--|-- 14f41463          	bne	x8,x15,8e8 <__ram_size+0x6e8>
- 7a4:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |  |  |              |     |  |  |  |  |  |  |   00500613          	addi	x12,x0,5
- 7a8:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |  |  |              |     |  |  |  |  |  |  |   01100593          	addi	x11,x0,17
- 7ac:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |  |  |              |     |  |  |  |  |  |  |   01000513          	addi	x10,x0,16
- 7b0:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |  |  |              |     |  |  |  |  |  |  |   518000ef          	jal	x1,cc8 <rel.constprop.0>
- 7b4:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |  |  \--------------|-----|--|--|--|--|--|--|-> 01600793          	addi	x15,x0,22
- 7b8:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |  |                 |  /--|--|--|--|--|--|--|-- 14f41463          	bne	x8,x15,900 <__ram_size+0x700>
- 7bc:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |  |                 |  |  |  |  |  |  |  |  |   00500613          	addi	x12,x0,5
- 7c0:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |  |                 |  |  |  |  |  |  |  |  |   01600593          	addi	x11,x0,22
- 7c4:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |  |                 |  |  |  |  |  |  |  |  |   01900513          	addi	x10,x0,25
- 7c8:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |  |                 |  |  |  |  |  |  |  |  |   500000ef          	jal	x1,cc8 <rel.constprop.0>
- 7cc:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |  \-----------------|--|--|--|--|--|--|--|--|-> 01b00793          	addi	x15,x0,27
- 7d0:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |                 /--|--|--|--|--|--|--|--|--|-- 14f41463          	bne	x8,x15,918 <__ram_size+0x718>
- 7d4:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |                 |  |  |  |  |  |  |  |  |  |   00500613          	addi	x12,x0,5
- 7d8:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |                 |  |  |  |  |  |  |  |  |  |   01b00593          	addi	x11,x0,27
- 7dc:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |                 |  |  |  |  |  |  |  |  |  |   01800513          	addi	x10,x0,24
- 7e0:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |                 |  |  |  |  |  |  |  |  |  |   4e8000ef          	jal	x1,cc8 <rel.constprop.0>
- 7e4:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     \-----------------|--|--|--|--|--|--|--|--|--|-> 02200793          	addi	x15,x0,34
- 7e8:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |                    /--|--|--|--|--|--|--|--|--|--|-- 14f41463          	bne	x8,x15,930 <__ram_size+0x730>
- 7ec:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |                    |  |  |  |  |  |  |  |  |  |  |   00500613          	addi	x12,x0,5
- 7f0:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |                    |  |  |  |  |  |  |  |  |  |  |   02200593          	addi	x11,x0,34
- 7f4:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |                    |  |  |  |  |  |  |  |  |  |  |   01f00513          	addi	x10,x0,31
- 7f8:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |                    |  |  |  |  |  |  |  |  |  |  |   4d0000ef          	jal	x1,cc8 <rel.constprop.0>
- 7fc:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |                    |  |  \--|--|--|--|--|--|--|--|-> 01300793          	addi	x15,x0,19
- 800:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |                 /--|--|-----|--|--|--|--|--|--|--|-- 14f41463          	bne	x8,x15,948 <__ram_size+0x748>
- 804:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |                 |  |  |     |  |  |  |  |  |  |  |   00700613          	addi	x12,x0,7
- 808:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |                 |  |  |     |  |  |  |  |  |  |  |   01300593          	addi	x11,x0,19
- 80c:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |                 |  |  |     |  |  |  |  |  |  |  |   00b00513          	addi	x10,x0,11
- 810:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |                 |  |  |     |  |  |  |  |  |  |  |   4b8000ef          	jal	x1,cc8 <rel.constprop.0>
- 814:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |                 |  |  |     |  |  |  |  |  |  |  \-> 00700793          	addi	x15,x0,7
- 818:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |              /--|--|--|-----|--|--|--|--|--|--|----- 14f41463          	bne	x8,x15,960 <__ram_size+0x760>
- 81c:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |              |  |  |  |     |  |  |  |  |  |  |      00b00613          	addi	x12,x0,11
- 820:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |              |  |  |  |     |  |  |  |  |  |  |      00700593          	addi	x11,x0,7
- 824:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |              |  |  |  |     |  |  |  |  |  |  |      00500513          	addi	x10,x0,5
- 828:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |              |  |  |  |     |  |  |  |  |  |  |      4a0000ef          	jal	x1,cc8 <rel.constprop.0>
- 82c:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |              |  |  |  |     |  |  |  |  |  |  |      00b00613          	addi	x12,x0,11
- 830:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |              |  |  |  |     |  |  |  |  |  |  |      00700593          	addi	x11,x0,7
- 834:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |              |  |  |  |     |  |  |  |  |  |  |      00f00513          	addi	x10,x0,15
- 838:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |              |  |  |  |     |  |  |  |  |  |  |      490000ef          	jal	x1,cc8 <rel.constprop.0>
- 83c:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |              |  |  |  |     |  |  |  |  |  |  \----> 01d00793          	addi	x15,x0,29
- 840:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  /-----------|--|--|--|-----|--|--|--|--|--|-------- 2ef41e63          	bne	x8,x15,b3c <__ram_size+0x93c>
- 844:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |           |  |  |  |     |  |  |  |  |  |         00b00613          	addi	x12,x0,11
- 848:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |           |  |  |  |     |  |  |  |  |  |         01d00593          	addi	x11,x0,29
- 84c:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |           |  |  |  |     |  |  |  |  |  |         01b00513          	addi	x10,x0,27
- 850:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |           |  |  |  |     |  |  |  |  |  |         478000ef          	jal	x1,cc8 <rel.constprop.0>
- 854:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |           |  |  |  |     |  |  |  |  |  |         00b00613          	addi	x12,x0,11
- 858:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |           |  |  |  |     |  |  |  |  |  |         01d00593          	addi	x11,x0,29
- 85c:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |           |  |  |  |     |  |  |  |  |  |         01a00513          	addi	x10,x0,26
- 860:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  /--------|--|--|--|-----|--|--|--|--|--|-------> 468000ef          	jal	x1,cc8 <rel.constprop.0>
- 864:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |        |  |  |  |     |  |  |  |  |  \-------> 00e00793          	addi	x15,x0,14
- 868:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  /-----|--|--|--|-----|--|--|--|--|----------- 2ef40663          	beq	x8,x15,b54 <__ram_size+0x954>
- 86c:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |     |  |  |  |  |            02000793          	addi	x15,x0,32
- 870:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  /--|--|--|--|--|----------- 14f41063          	bne	x8,x15,9b0 <__ram_size+0x7b0>
- 874:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |            00f00613          	addi	x12,x0,15
- 878:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |            02000593          	addi	x11,x0,32
- 87c:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |            01c00513          	addi	x10,x0,28
- 880:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |            448000ef          	jal	x1,cc8 <rel.constprop.0>
- 884:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  /--|--|--|--|--|--|--|--|--|--|----------> 01f00793          	addi	x15,x0,31
- 888:	|  +--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|----------- bef41ee3          	bne	x8,x15,484 <__ram_size+0x284>
- 88c:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |            01300613          	addi	x12,x0,19
- 890:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |            01f00593          	addi	x11,x0,31
- 894:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |            02300513          	addi	x10,x0,35
- 898:	|  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |            430000ef          	jal	x1,cc8 <rel.constprop.0>
- 89c:	|  |  |  |  |  |  |  |  |  |  |  |  \--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|----------- be5ff06f          	jal	x0,480 <__ram_size+0x280>
- 8a0:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  \----------> 00200793          	addi	x15,x0,2
- 8a4:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |           /-- 12f41463          	bne	x8,x15,9cc <__ram_size+0x7cc>
- 8a8:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |           |   00500613          	addi	x12,x0,5
- 8ac:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |           |   00200593          	addi	x11,x0,2
- 8b0:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |           |   00400513          	addi	x10,x0,4
- 8b4:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |           |   414000ef          	jal	x1,cc8 <rel.constprop.0>
- 8b8:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  \-----------|-> 00a00793          	addi	x15,x0,10
- 8bc:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |           /--|-- 12f41463          	bne	x8,x15,9e4 <__ram_size+0x7e4>
- 8c0:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |           |  |   00500613          	addi	x12,x0,5
- 8c4:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |           |  |   00a00593          	addi	x11,x0,10
- 8c8:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |           |  |   00700513          	addi	x10,x0,7
- 8cc:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |           |  |   3fc000ef          	jal	x1,cc8 <rel.constprop.0>
- 8d0:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  \-----------|--|-> 00d00793          	addi	x15,x0,13
- 8d4:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |  |  |  |  |           /--|--|-- 12f41463          	bne	x8,x15,9fc <__ram_size+0x7fc>
- 8d8:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |  |  |  |  |           |  |  |   00500613          	addi	x12,x0,5
- 8dc:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |  |  |  |  |           |  |  |   00d00593          	addi	x11,x0,13
- 8e0:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |  |  |  |  |           |  |  |   00e00513          	addi	x10,x0,14
- 8e4:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |  |  |  |  |           |  |  |   3e4000ef          	jal	x1,cc8 <rel.constprop.0>
- 8e8:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |  |  |  |  \-----------|--|--|-> 01200793          	addi	x15,x0,18
- 8ec:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |  |  |  |           /--|--|--|-- 12f41c63          	bne	x8,x15,a24 <__ram_size+0x824>
- 8f0:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |  |  |  |           |  |  |  |   00500613          	addi	x12,x0,5
- 8f4:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |  |  |  |           |  |  |  |   01200593          	addi	x11,x0,18
- 8f8:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |  |  |  |           |  |  |  |   01300513          	addi	x10,x0,19
- 8fc:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |  |  |  |           |  |  |  |   3cc000ef          	jal	x1,cc8 <rel.constprop.0>
- 900:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |  |  |  \-----------|--|--|--|-> 01900793          	addi	x15,x0,25
- 904:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |  |  |           /--|--|--|--|-- 12f41c63          	bne	x8,x15,a3c <__ram_size+0x83c>
- 908:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |  |  |           |  |  |  |  |   00500613          	addi	x12,x0,5
- 90c:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |  |  |           |  |  |  |  |   01900593          	addi	x11,x0,25
- 910:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |  |  |           |  |  |  |  |   01600513          	addi	x10,x0,22
- 914:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |  |  |           |  |  |  |  |   3b4000ef          	jal	x1,cc8 <rel.constprop.0>
- 918:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |  \--|-----------|--|--|--|--|-> 01d00793          	addi	x15,x0,29
- 91c:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |     |        /--|--|--|--|--|-- 12f41c63          	bne	x8,x15,a54 <__ram_size+0x854>
- 920:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |     |        |  |  |  |  |  |   00500613          	addi	x12,x0,5
- 924:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |     |        |  |  |  |  |  |   01d00593          	addi	x11,x0,29
- 928:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |     |        |  |  |  |  |  |   02000513          	addi	x10,x0,32
- 92c:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |     |        |  |  |  |  |  |   39c000ef          	jal	x1,cc8 <rel.constprop.0>
- 930:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  \-----|--------|--|--|--|--|--|-> 01e00793          	addi	x15,x0,30
- 934:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |        |     /--|--|--|--|--|--|-- 12f41c63          	bne	x8,x15,a6c <__ram_size+0x86c>
- 938:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |        |     |  |  |  |  |  |  |   00500613          	addi	x12,x0,5
- 93c:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |        |     |  |  |  |  |  |  |   01e00593          	addi	x11,x0,30
- 940:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |        |     |  |  |  |  |  |  |   02100513          	addi	x10,x0,33
- 944:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |        |     |  |  |  |  |  |  |   384000ef          	jal	x1,cc8 <rel.constprop.0>
- 948:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  \--------|-----|--|--|--|--|--|--|-> 01000793          	addi	x15,x0,16
- 94c:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |           |  /--|--|--|--|--|--|--|-- 12f41c63          	bne	x8,x15,a84 <__ram_size+0x884>
- 950:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |           |  |  |  |  |  |  |  |  |   00700613          	addi	x12,x0,7
- 954:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |           |  |  |  |  |  |  |  |  |   01000593          	addi	x11,x0,16
- 958:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |           |  |  |  |  |  |  |  |  |   01700513          	addi	x10,x0,23
- 95c:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |           |  |  |  |  |  |  |  |  |   36c000ef          	jal	x1,cc8 <rel.constprop.0>
- 960:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  \-----------|--|--|--|--|--|--|--|--|-> 00800793          	addi	x15,x0,8
- 964:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |           /--|--|--|--|--|--|--|--|--|-- 14f41463          	bne	x8,x15,aac <__ram_size+0x8ac>
- 968:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |           |  |  |  |  |  |  |  |  |  |   00b00613          	addi	x12,x0,11
- 96c:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |           |  |  |  |  |  |  |  |  |  |   00800593          	addi	x11,x0,8
- 970:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |           |  |  |  |  |  |  |  |  |  |   00500513          	addi	x10,x0,5
- 974:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |           |  |  |  |  |  |  |  |  |  |   354000ef          	jal	x1,cc8 <rel.constprop.0>
- 978:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |           |  |  |  |  |  |  |  |  |  |   00b00613          	addi	x12,x0,11
- 97c:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |           |  |  |  |  |  |  |  |  |  |   00800593          	addi	x11,x0,8
- 980:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |           |  |  |  |  |  |  |  |  |  |   01400513          	addi	x10,x0,20
- 984:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |           |  |  |  |  |  |  |  |  |  |   344000ef          	jal	x1,cc8 <rel.constprop.0>
- 988:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |     /-----|--|--|--|--|--|--|--|--|--|-> 00100793          	addi	x15,x0,1
- 98c:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |     |  /--|--|--|--|--|--|--|--|--|--|-- 14f41863          	bne	x8,x15,adc <__ram_size+0x8dc>
- 990:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |  |   00f00613          	addi	x12,x0,15
- 994:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |  |   00100593          	addi	x11,x0,1
- 998:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |  |   00400513          	addi	x10,x0,4
- 99c:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |  |   32c000ef          	jal	x1,cc8 <rel.constprop.0>
- 9a0:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |  |   00f00613          	addi	x12,x0,15
- 9a4:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |  |   00100593          	addi	x11,x0,1
- 9a8:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |  |   00600513          	addi	x10,x0,6
- 9ac:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |  |  |  |  |   31c000ef          	jal	x1,cc8 <rel.constprop.0>
- 9b0:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  |  |  |  |  |     |  |  |  \--|--|--|--|--|--|--|--|-> 01c00793          	addi	x15,x0,28
- 9b4:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |  \--|--|--|--|-----|--|--|-----|--|--|--|--|--|--|--|-- d8f414e3          	bne	x8,x15,73c <__ram_size+0x53c>
- 9b8:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |     |  |  |  |     |  |  |     |  |  |  |  |  |  |  |   00f00613          	addi	x12,x0,15
- 9bc:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |     |  |  |  |     |  |  |     |  |  |  |  |  |  |  |   01c00593          	addi	x11,x0,28
- 9c0:	|  |  |  |  |  |  |  |  |  |  |  |     |  |  |     |  |  |  |     |  |  |     |  |  |  |  |  |  |  |   02000513          	addi	x10,x0,32
- 9c4:	|  |  |  |  |  |  |  |  |  |  |  >-----|--|--|-----|--|--|--|-----|--|--|-----|--|--|--|--|--|--|--|-> 304000ef          	jal	x1,cc8 <rel.constprop.0>
- 9c8:	|  \--|--|--|--|--|--|--|--|--|--|-----|--|--|-----|--|--|--|-----|--|--|-----|--|--|--|--|--|--|--|-- abdff06f          	jal	x0,484 <__ram_size+0x284>
- 9cc:	|     |  |  |  |  |  |  |  |  |  |     |  |  |     |  |  |  |     |  |  |     |  |  |  |  |  |  |  \-> 00400793          	addi	x15,x0,4
- 9d0:	|     |  |  |  |  |  |  |  |  \--|-----|--|--|-----|--|--|--|-----|--|--|-----|--|--|--|--|--|--|----- b0f418e3          	bne	x8,x15,4e0 <__ram_size+0x2e0>
- 9d4:	|     |  |  |  |  |  |  |  |     |     |  |  |     |  |  |  |     |  |  |     |  |  |  |  |  |  |      00500613          	addi	x12,x0,5
- 9d8:	|     |  |  |  |  |  |  |  |     |     |  |  |     |  |  |  |     |  |  |     |  |  |  |  |  |  |      00400593          	addi	x11,x0,4
- 9dc:	|     |  |  |  |  |  |  |  |     |     |  |  |     |  |  |  |     |  |  |     |  |  |  |  |  |  |      00200513          	addi	x10,x0,2
- 9e0:	|     |  |  |  |  |  |  |  |     |     |  |  |     |  |  |  |     |  |  |     |  |  |  |  |  |  |      2e8000ef          	jal	x1,cc8 <rel.constprop.0>
- 9e4:	|     |  |  |  |  |  |  |  |     |     |  |  |     |  |  |  |     |  |  |     |  |  |  |  |  |  \----> 00800793          	addi	x15,x0,8
- 9e8:	|     |  |  |  |  |  |  |  \-----|-----|--|--|-----|--|--|--|-----|--|--|-----|--|--|--|--|--|-------- b0f418e3          	bne	x8,x15,4f8 <__ram_size+0x2f8>
- 9ec:	|     |  |  |  |  |  |  |        |     |  |  |     |  |  |  |     |  |  |     |  |  |  |  |  |         00500613          	addi	x12,x0,5
- 9f0:	|     |  |  |  |  |  |  |        |     |  |  |     |  |  |  |     |  |  |     |  |  |  |  |  |         00800593          	addi	x11,x0,8
- 9f4:	|     |  |  |  |  |  |  |        |     |  |  |     |  |  |  |     |  |  |     |  |  |  |  |  |         00b00513          	addi	x10,x0,11
- 9f8:	|     |  |  |  |  |  |  |        |     |  |  |     |  |  |  |     |  |  |     |  |  |  |  |  |         2d0000ef          	jal	x1,cc8 <rel.constprop.0>
- 9fc:	|     |  |  |  |  |  |  |        |     |  |  |     |  |  |  |     |  |  |     |  |  |  |  |  \-------> 00e00793          	addi	x15,x0,14
- a00:	|     |  |  |  |  |  |  \--------|-----|--|--|-----|--|--|--|-----|--|--|-----|--|--|--|--|----------- b0f418e3          	bne	x8,x15,510 <__ram_size+0x310>
- a04:	|     |  |  |  |  |  |           |     |  |  |     |  |  |  |     |  |  |     |  |  |  |  |            00500613          	addi	x12,x0,5
- a08:	|     |  |  |  |  |  |           |     |  |  |     |  |  |  |     |  |  |     |  |  |  |  |            00e00593          	addi	x11,x0,14
- a0c:	|     |  |  |  |  |  |           |     |  |  |     |  |  |  |     |  |  |     |  |  |  |  |            00d00513          	addi	x10,x0,13
- a10:	|     |  |  |  |  |  |           |     |  |  |     |  |  |  |     |  |  |     |  |  |  |  |            2b8000ef          	jal	x1,cc8 <rel.constprop.0>
- a14:	|     |  |  |  |  |  |           |     |  |  |     |  |  |  |     |  |  |     |  |  |  |  |            00500613          	addi	x12,x0,5
- a18:	|     |  |  |  |  |  |           |     |  |  |     |  |  |  |     |  |  |     |  |  |  |  |            00e00593          	addi	x11,x0,14
- a1c:	|     |  |  |  |  |  |           |     |  |  |     |  |  |  |     |  |  |     |  |  |  |  |            00f00513          	addi	x10,x0,15
- a20:	|     |  |  |  |  |  |           |     |  |  |     |  |  |  |     |  |  |     |  |  |  |  |            2a8000ef          	jal	x1,cc8 <rel.constprop.0>
- a24:	|     |  |  |  |  |  |           |     |  |  |     |  |  |  |     |  |  |     |  |  |  |  \----------> 01300793          	addi	x15,x0,19
- a28:	|     |  |  |  |  |  \-----------|-----|--|--|-----|--|--|--|-----|--|--|-----|--|--|--|-------------- b0f410e3          	bne	x8,x15,528 <__ram_size+0x328>
- a2c:	|     |  |  |  |  |              |     |  |  |     |  |  |  |     |  |  |     |  |  |  |               00500613          	addi	x12,x0,5
- a30:	|     |  |  |  |  |              |     |  |  |     |  |  |  |     |  |  |     |  |  |  |               01300593          	addi	x11,x0,19
- a34:	|     |  |  |  |  |              |     |  |  |     |  |  |  |     |  |  |     |  |  |  |               01200513          	addi	x10,x0,18
- a38:	|     |  |  |  |  |              |     |  |  |     |  |  |  |     |  |  |     |  |  |  |               290000ef          	jal	x1,cc8 <rel.constprop.0>
- a3c:	|     |  |  |  |  |              |     |  |  |     |  |  |  |     |  |  |     |  |  |  \-------------> 01700793          	addi	x15,x0,23
- a40:	|     |  |  |  |  \--------------|-----|--|--|-----|--|--|--|-----|--|--|-----|--|--|----------------- b0f410e3          	bne	x8,x15,540 <__ram_size+0x340>
- a44:	|     |  |  |  |                 |     |  |  |     |  |  |  |     |  |  |     |  |  |                  00500613          	addi	x12,x0,5
- a48:	|     |  |  |  |                 |     |  |  |     |  |  |  |     |  |  |     |  |  |                  01700593          	addi	x11,x0,23
- a4c:	|     |  |  |  |                 |     |  |  |     |  |  |  |     |  |  |     |  |  |                  01a00513          	addi	x10,x0,26
- a50:	|     |  |  |  |                 |     |  |  |     |  |  |  |     |  |  |     |  |  |                  278000ef          	jal	x1,cc8 <rel.constprop.0>
- a54:	|     |  |  |  |                 |     |  |  |     |  |  |  |     |  |  |     |  |  \----------------> 02000793          	addi	x15,x0,32
- a58:	|     |  |  |  \-----------------|-----|--|--|-----|--|--|--|-----|--|--|-----|--|-------------------- b0f410e3          	bne	x8,x15,558 <__ram_size+0x358>
- a5c:	|     |  |  |                    |     |  |  |     |  |  |  |     |  |  |     |  |                     00500613          	addi	x12,x0,5
- a60:	|     |  |  |                    |     |  |  |     |  |  |  |     |  |  |     |  |                     02000593          	addi	x11,x0,32
- a64:	|     |  |  |                    |     |  |  |     |  |  |  |     |  |  |     |  |                     01d00513          	addi	x10,x0,29
- a68:	|     |  |  |                    |     |  |  |     |  |  |  |     |  |  |     |  |                     260000ef          	jal	x1,cc8 <rel.constprop.0>
- a6c:	|     |  |  |                    |     |  |  |     |  |  |  |     |  |  |     |  \-------------------> 02100793          	addi	x15,x0,33
- a70:	|     |  |  \--------------------|-----|--|--|-----|--|--|--|-----|--|--|-----|----------------------- b0f410e3          	bne	x8,x15,570 <__ram_size+0x370>
- a74:	|     |  |                       |     |  |  |     |  |  |  |     |  |  |     |                        00500613          	addi	x12,x0,5
- a78:	|     |  |                       |     |  |  |     |  |  |  |     |  |  |     |                        02100593          	addi	x11,x0,33
- a7c:	|     |  |                       |     |  |  |     |  |  |  |     |  |  |     |                        01e00513          	addi	x10,x0,30
- a80:	|     |  |                       |     |  |  |     |  |  |  |     |  |  |     |                        248000ef          	jal	x1,cc8 <rel.constprop.0>
- a84:	|     |  |                       |     |  |  |     |  |  |  |     |  |  |     \----------------------> 01700793          	addi	x15,x0,23
- a88:	|     |  \-----------------------|-----|--|--|-----|--|--|--|-----|--|--|----------------------------- b0f410e3          	bne	x8,x15,588 <__ram_size+0x388>
- a8c:	|     |                          |     |  |  |     |  |  |  |     |  |  |                              00700613          	addi	x12,x0,7
- a90:	|     |                          |     |  |  |     |  |  |  |     |  |  |                              01700593          	addi	x11,x0,23
- a94:	|     |                          |     |  |  |     |  |  |  |     |  |  |                              01000513          	addi	x10,x0,16
- a98:	|     |                          |     |  |  |     |  |  |  |     |  |  |                              230000ef          	jal	x1,cc8 <rel.constprop.0>
- a9c:	|     |                          |     |  |  |     |  |  |  |     |  |  |                              00700613          	addi	x12,x0,7
- aa0:	|     |                          |     |  |  |     |  |  |  |     |  |  |                              01700593          	addi	x11,x0,23
- aa4:	|     |                          |     |  |  |     |  |  |  |     |  |  |                              01900513          	addi	x10,x0,25
- aa8:	|     \--------------------------|-----|--|--|-----|--|--|--|-----|--|--|----------------------------> 220000ef          	jal	x1,cc8 <rel.constprop.0>
- aac:	|                                |     |  |  |     |  |  |  |     |  |  \----------------------------> 00f00793          	addi	x15,x0,15
- ab0:	|                                |     |  |  |     |  |  |  |     |  |                          /----- 06f40e63          	beq	x8,x15,b2c <__ram_size+0x92c>
- ab4:	|                                |     |  |  |     |  |  |  |     |  |                          |      01400793          	addi	x15,x0,20
- ab8:	|                                |     |  |  \-----|--|--|--|-----|--|--------------------------|----- c4f412e3          	bne	x8,x15,6fc <__ram_size+0x4fc>
- abc:	|                                |     |  |        |  |  |  |     |  |                          |      00b00613          	addi	x12,x0,11
- ac0:	|                                |     |  |        |  |  |  |     |  |                          |      01400593          	addi	x11,x0,20
- ac4:	|                                |     |  |        |  |  |  |     |  |                          |      00800513          	addi	x10,x0,8
- ac8:	|                                |     |  |        |  |  |  |     |  |                          |      200000ef          	jal	x1,cc8 <rel.constprop.0>
- acc:	|                                |     |  |        |  |  |  |     |  |                          |      00b00613          	addi	x12,x0,11
- ad0:	|                                |     |  |        |  |  |  |     |  |                          |      01400593          	addi	x11,x0,20
- ad4:	|                                |     |  |        |  |  |  |     |  |                          |      01b00513          	addi	x10,x0,27
- ad8:	|                                |     |  |        |  |  |  |     |  |                          |      1f0000ef          	jal	x1,cc8 <rel.constprop.0>
- adc:	|                                |     |  |        |  |  |  |     |  \--------------------------|----> 00400793          	addi	x15,x0,4
- ae0:	|                                |     |  \--------|--|--|--|-----|-----------------------------|----- c4f412e3          	bne	x8,x15,724 <__ram_size+0x524>
- ae4:	|                                |     |           |  |  |  |     |                             |      00f00613          	addi	x12,x0,15
- ae8:	|                                |     |           |  |  |  |     |                             |      00400593          	addi	x11,x0,4
- aec:	|                                |     |           |  |  |  |     |                             |      00100513          	addi	x10,x0,1
- af0:	|                                |     |           |  |  |  |     |                             |      1d8000ef          	jal	x1,cc8 <rel.constprop.0>
- af4:	|                                |     |           |  |  |  |     |                             |      00f00613          	addi	x12,x0,15
- af8:	|                                |     |           |  |  |  |     |                             |      00400593          	addi	x11,x0,4
- afc:	|                                |     |           |  |  |  |     |                             |      00e00513          	addi	x10,x0,14
- b00:	|                                |     |           |  |  |  |     |                             |      1c8000ef          	jal	x1,cc8 <rel.constprop.0>
- b04:	|                                |     \-----------|--|--|--|-----|-----------------------------|----> 01e00793          	addi	x15,x0,30
- b08:	|                                |                 |  |  |  |     |                             |  /-- 04f41e63          	bne	x8,x15,b64 <__ram_size+0x964>
- b0c:	|                                |                 |  |  |  |     |                             |  |   01300613          	addi	x12,x0,19
- b10:	|                                |                 |  |  |  |     |                             |  |   01e00593          	addi	x11,x0,30
- b14:	|                                |                 |  |  |  |     |                             |  |   00d00513          	addi	x10,x0,13
- b18:	|                                |                 |  |  |  |     |                             |  |   1b0000ef          	jal	x1,cc8 <rel.constprop.0>
- b1c:	|                                |                 |  |  |  |     |                             |  |   01300613          	addi	x12,x0,19
- b20:	|                                |                 |  |  |  |     |                             |  |   01e00593          	addi	x11,x0,30
- b24:	|                                |                 |  |  |  |     |                             |  |   02300513          	addi	x10,x0,35
- b28:	|                                +-----------------|--|--|--|-----|-----------------------------|--|-- e9dff06f          	jal	x0,9c4 <__ram_size+0x7c4>
- b2c:	|                                |                 |  |  |  |     |                             \--|-> 00b00613          	addi	x12,x0,11
- b30:	|                                |                 |  |  |  |     |                                |   00f00593          	addi	x11,x0,15
- b34:	|                                |                 |  |  |  |     |                                |   00700513          	addi	x10,x0,7
- b38:	|                                |                 |  |  |  |     |                                |   190000ef          	jal	x1,cc8 <rel.constprop.0>
- b3c:	|                                |                 \--|--|--|-----|--------------------------------|-> 01a00793          	addi	x15,x0,26
- b40:	|                                |                    |  |  |     \--------------------------------|-- e4f414e3          	bne	x8,x15,988 <__ram_size+0x788>
- b44:	|                                |                    |  |  |                                      |   00b00613          	addi	x12,x0,11
- b48:	|                                |                    |  |  |                                      |   01a00593          	addi	x11,x0,26
- b4c:	|                                |                    |  |  |                                      |   01d00513          	addi	x10,x0,29
- b50:	|                                |                    \--|--|--------------------------------------|-- d11ff06f          	jal	x0,860 <__ram_size+0x660>
- b54:	|                                |                       \--|--------------------------------------|-> 00f00613          	addi	x12,x0,15
- b58:	|                                |                          |                                      |   00e00593          	addi	x11,x0,14
- b5c:	|                                |                          |                                      |   00400513          	addi	x10,x0,4
- b60:	|                                |                          |                                      |   168000ef          	jal	x1,cc8 <rel.constprop.0>
- b64:	|                                |                          |                                      \-> 02300793          	addi	x15,x0,35
- b68:	|                                |                          \----------------------------------------- d0f41ee3          	bne	x8,x15,884 <__ram_size+0x684>
- b6c:	|                                |                                                                     01300613          	addi	x12,x0,19
- b70:	|                                |                                                                     02300593          	addi	x11,x0,35
- b74:	|                                |                                                                     01e00513          	addi	x10,x0,30
- b78:	|                                |                                                                     150000ef          	jal	x1,cc8 <rel.constprop.0>
- b7c:	|                                |                                                                     01300613          	addi	x12,x0,19
- b80:	|                                |                                                                     02300593          	addi	x11,x0,35
- b84:	|                                |                                                                     01f00513          	addi	x10,x0,31
- b88:	|                                \-------------------------------------------------------------------- e3dff06f          	jal	x0,9c4 <__ram_size+0x7c4>
- b8c:	\----------------------------------------------------------------------------------------------------> 00149713          	slli	x14,x9,0x1
- b90:	                                                                                                       020007b7          	lui	x15,0x2000
- b94:	                                                                                                       00e787b3          	add	x15,x15,x14
- b98:	                                                                                                       0207d703          	lhu	x14,32(x15) # 2000020 <__bss_end+0x20>
- b9c:	                                                                                                       000107b7          	lui	x15,0x10
- ba0:	                                                                                                       fff78793          	addi	x15,x15,-1 # ffff <Path_Planner_Dec.c.91b6c2b9+0xec45>
- ba4:	                                                                                                       00000693          	addi	x13,x0,0
- ba8:	                                                                                                   /-- 02f70663          	beq	x14,x15,bd4 <__ram_size+0x9d4>
- bac:	                                                                                                   |   02000737          	lui	x14,0x2000
- bb0:	                                                                                                   |   00048793          	addi	x15,x9,0
- bb4:	                                                                                                   |   00100693          	addi	x13,x0,1
- bb8:	                                                                                                   |   07070713          	addi	x14,x14,112 # 2000070 <__bss_end+0x70>
- bbc:	                                                                                       /-----/-----|-X 0cf91663          	bne	x18,x15,c88 <__ram_size+0xa88>
- bc0:	                                                                                       |     |     |   01810613          	addi	x12,x2,24
- bc4:	                                                                                       |     |     |   02000737          	lui	x14,0x2000
- bc8:	                                                                                       |     |     |   00d607b3          	add	x15,x12,x13
- bcc:	                                                                                       |     |     |   07070713          	addi	x14,x14,112 # 2000070 <__bss_end+0x70>
- bd0:	                                                                                    /--|--/--|-----|-X 0cf61663          	bne	x12,x15,c9c <__ram_size+0xa9c>
- bd4:	                                                                                    |  |  |  |     \-> 00c12783          	lw	x15,12(x2)
- bd8:	                                                                                    |  |  |  |  /----- 04078a63          	beq	x15,x0,c2c <__ram_size+0xa2c>
- bdc:	                                                                                    |  |  |  |  |      01014783          	lbu	x15,16(x2)
- be0:	                                                                                    |  |  |  |  |  /-- 02079263          	bne	x15,x0,c04 <__ram_size+0xa04>
- be4:	                                                                                    |  |  |  |  |  |   020007b7          	lui	x15,0x2000
- be8:	                                                                                    |  |  |  |  |  |   00078423          	sb	x0,8(x15) # 2000008 <__bss_end+0x8>
- bec:	                                                                                    |  |  |  |  |  |   01714703          	lbu	x14,23(x2)
- bf0:	                                                                                    |  |  |  |  |  |   020007b7          	lui	x15,0x2000
- bf4:	                                                                                    |  |  |  |  |  |   00e786a3          	sb	x14,13(x15) # 200000d <__bss_end+0xd>
- bf8:	                                                                                    |  |  |  |  |  |   01614703          	lbu	x14,22(x2)
- bfc:	                                                                                    |  |  |  |  |  |   020007b7          	lui	x15,0x2000
- c00:	                                                                                    |  |  |  |  |  |   00e78623          	sb	x14,12(x15) # 200000c <__bss_end+0xc>
- c04:	                                                                                    |  |  |  |  |  \-> 020007b7          	lui	x15,0x2000
- c08:	                                                                                    |  |  |  |  |      01578823          	sb	x21,16(x15) # 2000010 <__bss_end+0x10>
- c0c:	                                                                                    |  |  |  |  |      020007b7          	lui	x15,0x2000
- c10:	                                                                                    |  |  |  |  |      018788a3          	sb	x24,17(x15) # 2000011 <__bss_end+0x11>
- c14:	                                                                                    |  |  |  |  |      020007b7          	lui	x15,0x2000
- c18:	                                                                                    |  |  |  |  |      01778923          	sb	x23,18(x15) # 2000012 <__bss_end+0x12>
- c1c:	                                                                                    |  |  |  |  |      020007b7          	lui	x15,0x2000
- c20:	                                                                                    |  |  |  |  |      019789a3          	sb	x25,19(x15) # 2000013 <__bss_end+0x13>
- c24:	                                                                                    |  |  |  |  |      020007b7          	lui	x15,0x2000
- c28:	                                                                                    |  |  |  |  |      01678a23          	sb	x22,20(x15) # 2000014 <__bss_end+0x14>
- c2c:	                                                                                    |  |  |  |  \----> 02000737          	lui	x14,0x2000
- c30:	                                                                                    |  |  |  |         00000793          	addi	x15,x0,0
- c34:	                                                                                    |  |  |  |         01870713          	addi	x14,x14,24 # 2000018 <__bss_end+0x18>
- c38:	                                                                                    |  |  |  |  /--/-X 06d7cc63          	blt	x15,x13,cb0 <__ram_size+0xab0>
- c3c:	                                                                                    |  |  |  |  |  |   020007b7          	lui	x15,0x2000
- c40:	                                                                                    |  |  |  |  |  |   00100713          	addi	x14,x0,1
- c44:	                                                                                    |  |  |  |  |  |   00e78e23          	sb	x14,28(x15) # 200001c <__bss_end+0x1c>
- c48:	                                                                                    |  |  |  |  |  |   07c12083          	lw	x1,124(x2)
- c4c:	                                                                                    |  |  |  |  |  |   07812403          	lw	x8,120(x2)
- c50:	                                                                                    |  |  |  |  |  |   07412483          	lw	x9,116(x2)
- c54:	                                                                                    |  |  |  |  |  |   07012903          	lw	x18,112(x2)
- c58:	                                                                                    |  |  |  |  |  |   06c12983          	lw	x19,108(x2)
- c5c:	                                                                                    |  |  |  |  |  |   06812a03          	lw	x20,104(x2)
- c60:	                                                                                    |  |  |  |  |  |   06412a83          	lw	x21,100(x2)
- c64:	                                                                                    |  |  |  |  |  |   06012b03          	lw	x22,96(x2)
- c68:	                                                                                    |  |  |  |  |  |   05c12b83          	lw	x23,92(x2)
- c6c:	                                                                                    |  |  |  |  |  |   05812c03          	lw	x24,88(x2)
- c70:	                                                                                    |  |  |  |  |  |   05412c83          	lw	x25,84(x2)
- c74:	                                                                                    |  |  |  |  |  |   05012d03          	lw	x26,80(x2)
- c78:	                                                                                    |  |  |  |  |  |   04c12d83          	lw	x27,76(x2)
- c7c:	                                                                                    |  |  |  |  |  |   00000513          	addi	x10,x0,0
- c80:	                                                                                    |  |  |  |  |  |   08010113          	addi	x2,x2,128
- c84:	                                                                                    |  |  |  |  |  |   00008067          	jalr	x0,0(x1)
- c88:	                                                                                    |  |  |  \--|--|-> 00168693          	addi	x13,x13,1
- c8c:	                                                                                    |  |  |     |  |   00e787b3          	add	x15,x15,x14
- c90:	                                                                                    |  |  |     |  |   0007c783          	lbu	x15,0(x15)
- c94:	                                                                                    |  |  |     |  |   0ff6f693          	andi	x13,x13,255
- c98:	                                                                                    |  \--|-----|--|-- f25ff06f          	jal	x0,bbc <__ram_size+0x9bc>
- c9c:	                                                                                    |     \-----|--|-> fe978fa3          	sb	x9,-1(x15)
- ca0:	                                                                                    |           |  |   00e484b3          	add	x9,x9,x14
- ca4:	                                                                                    |           |  |   0004c483          	lbu	x9,0(x9)
- ca8:	                                                                                    |           |  |   fff78793          	addi	x15,x15,-1
- cac:	                                                                                    \-----------|--|-- f25ff06f          	jal	x0,bd0 <__ram_size+0x9d0>
- cb0:	                                                                                                |  \-> 01810613          	addi	x12,x2,24
- cb4:	                                                                                                |      00f60633          	add	x12,x12,x15
- cb8:	                                                                                                |      00064603          	lbu	x12,0(x12)
- cbc:	                                                                                                |      00178793          	addi	x15,x15,1
- cc0:	                                                                                                |      00c70023          	sb	x12,0(x14)
- cc4:	                                                                                                \----- f75ff06f          	jal	x0,c38 <__ram_size+0xa38>
+  60:	                         f8010113          	addi	x2,x2,-128
+  64:	                         06112e23          	sw	x1,124(x2)
+  68:	                         06812c23          	sw	x8,120(x2)
+  6c:	                         06912a23          	sw	x9,116(x2)
+  70:	                         07212823          	sw	x18,112(x2)
+  74:	                         07312623          	sw	x19,108(x2)
+  78:	                         07412423          	sw	x20,104(x2)
+  7c:	                         07512223          	sw	x21,100(x2)
+  80:	                         07612023          	sw	x22,96(x2)
+  84:	                         05712e23          	sw	x23,92(x2)
+  88:	                         05812c23          	sw	x24,88(x2)
+  8c:	                         05912a23          	sw	x25,84(x2)
+  90:	                         05a12823          	sw	x26,80(x2)
+  94:	                         05b12623          	sw	x27,76(x2)
+  98:	                         020007b7          	lui	x15,0x2000
+  9c:	                         0087c703          	lbu	x14,8(x15) # 2000008 <__bss_end+0x8>
+  a0:	                         0ff77793          	andi	x15,x14,255
+  a4:	                         00f12623          	sw	x15,12(x2)
+  a8:	                         020007b7          	lui	x15,0x2000
+  ac:	                         00d7c403          	lbu	x8,13(x15) # 200000d <__bss_end+0xd>
+  b0:	                         020007b7          	lui	x15,0x2000
+  b4:	                         0ff47413          	andi	x8,x8,255
+  b8:	/----------------------- 44070263          	beq	x14,x0,4fc <__ram_size+0x2fc>
+  bc:	|                        0007a383          	lw	x7,0(x15) # 2000000 <__bss_end>
+  c0:	|                        0047a283          	lw	x5,4(x15)
+  c4:	|                        0000e837          	lui	x16,0xe
+  c8:	|                        0000ce37          	lui	x28,0xc
+  cc:	|                        0000a6b7          	lui	x13,0xa
+  d0:	|                        000035b7          	lui	x11,0x3
+  d4:	|                        00010637          	lui	x12,0x10
+  d8:	|                        00001eb7          	lui	x29,0x1
+  dc:	|                        21749f37          	lui	x30,0x21749
+  e0:	|                        da09bfb7          	lui	x31,0xda09b
+  e4:	|                        00008337          	lui	x6,0x8
+  e8:	|                        00100513          	addi	x10,x0,1
+  ec:	|                        5f680813          	addi	x16,x16,1526 # e5f6 <__flash_size+0xd5f6>
+  f0:	|                        3d4e0e13          	addi	x28,x28,980 # c3d4 <__flash_size+0xb3d4>
+  f4:	|                        1b268693          	addi	x13,x13,434 # a1b2 <__flash_size+0x91b2>
+  f8:	|                        93a58593          	addi	x11,x11,-1734 # 293a <__flash_size+0x193a>
+  fc:	|                        71800713          	addi	x14,x0,1816
+ 100:	|                        fff60613          	addi	x12,x12,-1 # ffff <__flash_size+0xefff>
+ 104:	|                        fffe8e93          	addi	x29,x29,-1 # fff <__text_end+0x44f>
+ 108:	|                        00008937          	lui	x18,0x8
+ 10c:	|                        fe3f0f13          	addi	x30,x30,-29 # 21748fe3 <__global_pointer$+0x1f7487e3>
+ 110:	|                        65cf8f93          	addi	x31,x31,1628 # da09b65c <__global_pointer$+0xd809ae5c>
+ 114:	|                        02000493          	addi	x9,x0,32
+ 118:	|                 /----> 0035d793          	srli	x15,x11,0x3
+ 11c:	|                 |      0036d893          	srli	x17,x13,0x3
+ 120:	|                 |      00d71993          	slli	x19,x14,0xd
+ 124:	|                 |      00d59593          	slli	x11,x11,0xd
+ 128:	|                 |      00f9e9b3          	or	x19,x19,x15
+ 12c:	|                 |      0115e5b3          	or	x11,x11,x17
+ 130:	|                 |      000e0793          	addi	x15,x28,0
+ 134:	|                 |      00c5fe33          	and	x28,x11,x12
+ 138:	|                 |      00080593          	addi	x11,x16,0
+ 13c:	|                 |      00d69813          	slli	x16,x13,0xd
+ 140:	|                 |      0037d693          	srli	x13,x15,0x3
+ 144:	|                 |      00d86833          	or	x16,x16,x13
+ 148:	|                 |      00d79793          	slli	x15,x15,0xd
+ 14c:	|                 |      0035d693          	srli	x13,x11,0x3
+ 150:	|                 |      00d7e7b3          	or	x15,x15,x13
+ 154:	|                 |      00375713          	srli	x14,x14,0x3
+ 158:	|                 |      00d59593          	slli	x11,x11,0xd
+ 15c:	|                 |      01099a13          	slli	x20,x19,0x10
+ 160:	|                 |      00e5e5b3          	or	x11,x11,x14
+ 164:	|                 |      00c87833          	and	x16,x16,x12
+ 168:	|                 |      00c7f7b3          	and	x15,x15,x12
+ 16c:	|                 |      01d9f733          	and	x14,x19,x29
+ 170:	|                 |      00c9d893          	srli	x17,x19,0xc
+ 174:	|                 |      000f0693          	addi	x13,x30,0
+ 178:	|                 |  /-- 000a4463          	blt	x20,x0,180 <__stack_size+0xc8>
+ 17c:	|                 |  |   000f8693          	addi	x13,x31,0
+ 180:	|                 |  \-> 00289893          	slli	x17,x17,0x2
+ 184:	|                 |      01c8f893          	andi	x17,x17,28
+ 188:	|                 |      0116d6b3          	srl	x13,x13,x17
+ 18c:	|                 |      00c69693          	slli	x13,x13,0xc
+ 190:	|                 |      00c6f6b3          	and	x13,x13,x12
+ 194:	|                 |      00e6e6b3          	or	x13,x13,x14
+ 198:	|                 |      00155713          	srli	x14,x10,0x1
+ 19c:	|                 |      00150513          	addi	x10,x10,1
+ 1a0:	|                 |      0065c5b3          	xor	x11,x11,x6
+ 1a4:	|                 |      0ff57513          	andi	x10,x10,255
+ 1a8:	|                 |      00f74733          	xor	x14,x14,x15
+ 1ac:	|                 |      00c5f5b3          	and	x11,x11,x12
+ 1b0:	|                 |      01230333          	add	x6,x6,x18
+ 1b4:	|                 \----- f69512e3          	bne	x10,x9,118 <__stack_size+0x60>
+ 1b8:	|                        01069793          	slli	x15,x13,0x10
+ 1bc:	|                        01081613          	slli	x12,x16,0x10
+ 1c0:	|                        01c7e7b3          	or	x15,x15,x28
+ 1c4:	|                        00e66633          	or	x12,x12,x14
+ 1c8:	|                        a9703f37          	lui	x30,0xa9703
+ 1cc:	|                        d21c9fb7          	lui	x31,0xd21c9
+ 1d0:	|                        00010537          	lui	x10,0x10
+ 1d4:	|                        000014b7          	lui	x9,0x1
+ 1d8:	|                        0077c7b3          	xor	x15,x15,x7
+ 1dc:	|                        00564633          	xor	x12,x12,x5
+ 1e0:	|                        000f83b7          	lui	x7,0xf8
+ 1e4:	|                        01f00e93          	addi	x29,x0,31
+ 1e8:	|                        01f00913          	addi	x18,x0,31
+ 1ec:	|                        03e00993          	addi	x19,x0,62
+ 1f0:	|                        03f00a13          	addi	x20,x0,63
+ 1f4:	|                        80000ab7          	lui	x21,0x80000
+ 1f8:	|                        64bf0f13          	addi	x30,x30,1611 # a970364b <__global_pointer$+0xa7702e4b>
+ 1fc:	|                        fe5f8f93          	addi	x31,x31,-27 # d21c8fe5 <__global_pointer$+0xd01c87e5>
+ 200:	|                        02000b13          	addi	x22,x0,32
+ 204:	|                        fff50513          	addi	x10,x10,-1 # ffff <__flash_size+0xefff>
+ 208:	|                        fff48493          	addi	x9,x9,-1 # fff <__text_end+0x44f>
+ 20c:	|                        00700b93          	addi	x23,x0,7
+ 210:	|                        ffff8c37          	lui	x24,0xffff8
+ 214:	|  /-------------------> 00000c93          	addi	x25,x0,0
+ 218:	|  |                     00000293          	addi	x5,x0,0
+ 21c:	|  |                     00000d13          	addi	x26,x0,0
+ 220:	|  |                     00000313          	addi	x6,x0,0
+ 224:	|  |              /----> 006658b3          	srl	x17,x12,x6
+ 228:	|  |              |  /-- 00697663          	bgeu	x18,x6,234 <__ram_size+0x34>
+ 22c:	|  |              |  |   fe030893          	addi	x17,x6,-32 # 7fe0 <__flash_size+0x6fe0>
+ 230:	|  |              |  |   0117d8b3          	srl	x17,x15,x17
+ 234:	|  |              |  \-> 0018f893          	andi	x17,x17,1
+ 238:	|  |  /-----------|----- 17997063          	bgeu	x18,x25,398 <__ram_size+0x198>
+ 23c:	|  |  |           |      fe0c8d93          	addi	x27,x25,-32
+ 240:	|  |  |           |      01b89db3          	sll	x27,x17,x27
+ 244:	|  |  |           |      01bd6d33          	or	x26,x26,x27
+ 248:	|  |  |  /--------|----> 01030893          	addi	x17,x6,16
+ 24c:	|  |  |  |        |      0ff8f893          	andi	x17,x17,255
+ 250:	|  |  |  |  /-----|----- 1519fa63          	bgeu	x19,x17,3a4 <__ram_size+0x1a4>
+ 254:	|  |  |  |  |     |      fd130313          	addi	x6,x6,-47
+ 258:	|  |  |  |  |     |      0ff37313          	andi	x6,x6,255
+ 25c:	|  |  |  |  |  /--|----> 001c8c93          	addi	x25,x25,1
+ 260:	|  |  |  |  |  |  \----- fd4c92e3          	bne	x25,x20,224 <__ram_size+0x24>
+ 264:	|  |  |  |  |  |         0157f7b3          	and	x15,x15,x21
+ 268:	|  |  |  |  |  |         01a7e7b3          	or	x15,x15,x26
+ 26c:	|  |  |  |  |  |         00000893          	addi	x17,x0,0
+ 270:	|  |  |  |  |  |         00000c93          	addi	x25,x0,0
+ 274:	|  |  |  |  |  |         00000d13          	addi	x26,x0,0
+ 278:	|  |  |  |  |  |  /----> 0117d333          	srl	x6,x15,x17
+ 27c:	|  |  |  |  |  |  |      00837d93          	andi	x27,x6,8
+ 280:	|  |  |  |  |  |  |      000f0613          	addi	x12,x30,0
+ 284:	|  |  |  |  |  |  |  /-- 000d9463          	bne	x27,x0,28c <__ram_size+0x8c>
+ 288:	|  |  |  |  |  |  |  |   000f8613          	addi	x12,x31,0
+ 28c:	|  |  |  |  |  |  |  \-> 00231313          	slli	x6,x6,0x2
+ 290:	|  |  |  |  |  |  |      01c37313          	andi	x6,x6,28
+ 294:	|  |  |  |  |  |  |      00665633          	srl	x12,x12,x6
+ 298:	|  |  |  |  |  |  |      00f67613          	andi	x12,x12,15
+ 29c:	|  |  |  |  |  |  |      0112d333          	srl	x6,x5,x17
+ 2a0:	|  |  |  |  |  |  |      01161633          	sll	x12,x12,x17
+ 2a4:	|  |  |  |  |  |  |      00837d93          	andi	x27,x6,8
+ 2a8:	|  |  |  |  |  |  |      00cd6d33          	or	x26,x26,x12
+ 2ac:	|  |  |  |  |  |  |      000f0613          	addi	x12,x30,0
+ 2b0:	|  |  |  |  |  |  |  /-- 000d9463          	bne	x27,x0,2b8 <__ram_size+0xb8>
+ 2b4:	|  |  |  |  |  |  |  |   000f8613          	addi	x12,x31,0
+ 2b8:	|  |  |  |  |  |  |  \-> 00231313          	slli	x6,x6,0x2
+ 2bc:	|  |  |  |  |  |  |      01c37313          	andi	x6,x6,28
+ 2c0:	|  |  |  |  |  |  |      00665633          	srl	x12,x12,x6
+ 2c4:	|  |  |  |  |  |  |      00f67613          	andi	x12,x12,15
+ 2c8:	|  |  |  |  |  |  |      01161633          	sll	x12,x12,x17
+ 2cc:	|  |  |  |  |  |  |      00488893          	addi	x17,x17,4
+ 2d0:	|  |  |  |  |  |  |      00ccecb3          	or	x25,x25,x12
+ 2d4:	|  |  |  |  |  |  \----- fb6892e3          	bne	x17,x22,278 <__ram_size+0x78>
+ 2d8:	|  |  |  |  |  |         001ed893          	srli	x17,x29,0x1
+ 2dc:	|  |  |  |  |  |         00a3f7b3          	and	x15,x7,x10
+ 2e0:	|  |  |  |  |  |         0096f633          	and	x12,x13,x9
+ 2e4:	|  |  |  |  |  |         00c6d693          	srli	x13,x13,0xc
+ 2e8:	|  |  |  |  |  |         00e8c8b3          	xor	x17,x17,x14
+ 2ec:	|  |  |  |  |  |         00b7c7b3          	xor	x15,x15,x11
+ 2f0:	|  |  |  |  |  |         000f0713          	addi	x14,x30,0
+ 2f4:	|  |  |  |  |  |     /-- 00dbe463          	bltu	x23,x13,2fc <__ram_size+0xfc>
+ 2f8:	|  |  |  |  |  |     |   000f8713          	addi	x14,x31,0
+ 2fc:	|  |  |  |  |  |     \-> 00269693          	slli	x13,x13,0x2
+ 300:	|  |  |  |  |  |         01c6f693          	andi	x13,x13,28
+ 304:	|  |  |  |  |  |         00d75733          	srl	x14,x14,x13
+ 308:	|  |  |  |  |  |         00d7d313          	srli	x6,x15,0xd
+ 30c:	|  |  |  |  |  |         00389693          	slli	x13,x17,0x3
+ 310:	|  |  |  |  |  |         00c71713          	slli	x14,x14,0xc
+ 314:	|  |  |  |  |  |         00d36333          	or	x6,x6,x13
+ 318:	|  |  |  |  |  |         00a77733          	and	x14,x14,x10
+ 31c:	|  |  |  |  |  |         00381693          	slli	x13,x16,0x3
+ 320:	|  |  |  |  |  |         00d8d893          	srli	x17,x17,0xd
+ 324:	|  |  |  |  |  |         00c76733          	or	x14,x14,x12
+ 328:	|  |  |  |  |  |         00d8e8b3          	or	x17,x17,x13
+ 32c:	|  |  |  |  |  |         00d85813          	srli	x16,x16,0xd
+ 330:	|  |  |  |  |  |         003e1693          	slli	x13,x28,0x3
+ 334:	|  |  |  |  |  |         00371613          	slli	x12,x14,0x3
+ 338:	|  |  |  |  |  |         00379793          	slli	x15,x15,0x3
+ 33c:	|  |  |  |  |  |         00d86833          	or	x16,x16,x13
+ 340:	|  |  |  |  |  |         00d75713          	srli	x14,x14,0xd
+ 344:	|  |  |  |  |  |         00f76733          	or	x14,x14,x15
+ 348:	|  |  |  |  |  |         00a37333          	and	x6,x6,x10
+ 34c:	|  |  |  |  |  |         00a876b3          	and	x13,x16,x10
+ 350:	|  |  |  |  |  |         00de5593          	srli	x11,x28,0xd
+ 354:	|  |  |  |  |  |         00c5e5b3          	or	x11,x11,x12
+ 358:	|  |  |  |  |  |         00a8f8b3          	and	x17,x17,x10
+ 35c:	|  |  |  |  |  |         00a77733          	and	x14,x14,x10
+ 360:	|  |  |  |  |  |         01069793          	slli	x15,x13,0x10
+ 364:	|  |  |  |  |  |         01031613          	slli	x12,x6,0x10
+ 368:	|  |  |  |  |  |         fffe8e93          	addi	x29,x29,-1
+ 36c:	|  |  |  |  |  |         0117e7b3          	or	x15,x15,x17
+ 370:	|  |  |  |  |  |         00e66633          	or	x12,x12,x14
+ 374:	|  |  |  |  |  |         0ffefe93          	andi	x29,x29,255
+ 378:	|  |  |  |  |  |         00a5f5b3          	and	x11,x11,x10
+ 37c:	|  |  |  |  |  |         01a7c7b3          	xor	x15,x15,x26
+ 380:	|  |  |  |  |  |         01964633          	xor	x12,x12,x25
+ 384:	|  |  |  |  |  |         018383b3          	add	x7,x7,x24
+ 388:	|  |  |  |  |  |     /-- 020e8263          	beq	x29,x0,3ac <__ram_size+0x1ac>
+ 38c:	|  |  |  |  |  |     |   00088e13          	addi	x28,x17,0
+ 390:	|  |  |  |  |  |     |   00030813          	addi	x16,x6,0
+ 394:	|  \--|--|--|--|-----|-- e81ff06f          	jal	x0,214 <__ram_size+0x14>
+ 398:	|     \--|--|--|-----|-> 019898b3          	sll	x17,x17,x25
+ 39c:	|        |  |  |     |   0112e2b3          	or	x5,x5,x17
+ 3a0:	|        \--|--|-----|-- ea9ff06f          	jal	x0,248 <__ram_size+0x48>
+ 3a4:	|           \--|-----|-> 00088313          	addi	x6,x17,0
+ 3a8:	|              \-----|-- eb5ff06f          	jal	x0,25c <__ram_size+0x5c>
+ 3ac:	|                    \-> 0187d493          	srli	x9,x15,0x18
+ 3b0:	|                        01065993          	srli	x19,x12,0x10
+ 3b4:	|                        01865b13          	srli	x22,x12,0x18
+ 3b8:	|                        01049493          	slli	x9,x9,0x10
+ 3bc:	|                        00a67633          	and	x12,x12,x10
+ 3c0:	|                        0107da93          	srli	x21,x15,0x10
+ 3c4:	|                        0087da13          	srli	x20,x15,0x8
+ 3c8:	|                        00c4e4b3          	or	x9,x9,x12
+ 3cc:	|                        0ff7fb93          	andi	x23,x15,255
+ 3d0:	|                        00ff07b7          	lui	x15,0xff0
+ 3d4:	|                        0084dc13          	srli	x24,x9,0x8
+ 3d8:	|                        00f4f4b3          	and	x9,x9,x15
+ 3dc:	|                        0ffafa93          	andi	x21,x21,255
+ 3e0:	|                        0ffa7a13          	andi	x20,x20,255
+ 3e4:	|                        0ff9f993          	andi	x19,x19,255
+ 3e8:	|                        0ff67913          	andi	x18,x12,255
+ 3ec:	|                        0ffc7c13          	andi	x24,x24,255
+ 3f0:	|                        0014b493          	sltiu	x9,x9,1
+ 3f4:	|     /----------------> fff40793          	addi	x15,x8,-1
+ 3f8:	|     |                  0ff7f793          	andi	x15,x15,255
+ 3fc:	|     |                  02300713          	addi	x14,x0,35
+ 400:	|     |                  00000c93          	addi	x25,x0,0
+ 404:	|  /--|----------------- 04f76863          	bltu	x14,x15,454 <__ram_size+0x254>
+ 408:	|  |  |                  fff90793          	addi	x15,x18,-1 # 7fff <__flash_size+0x6fff>
+ 40c:	|  |  |                  0ff7f793          	andi	x15,x15,255
+ 410:	|  +--|----------------- 04f76263          	bltu	x14,x15,454 <__ram_size+0x254>
+ 414:	|  |  |                  02000537          	lui	x10,0x2000
+ 418:	|  |  |                  02500613          	addi	x12,x0,37
+ 41c:	|  |  |                  0ff00593          	addi	x11,x0,255
+ 420:	|  |  |                  02050513          	addi	x10,x10,32 # 2000020 <__bss_end+0x20>
+ 424:	|  |  |                  768000ef          	jal	x1,b8c <memset>
+ 428:	|  |  |                  020007b7          	lui	x15,0x2000
+ 42c:	|  |  |                  012787b3          	add	x15,x15,x18
+ 430:	|  |  |                  02078023          	sb	x0,32(x15) # 2000020 <__bss_end+0x20>
+ 434:	|  |  |              /-> 00000513          	addi	x10,x0,0
+ 438:	|  |  |              |   1b0000ef          	jal	x1,5e8 <sweep.constprop.0>
+ 43c:	|  |  |              \-- fe051ce3          	bne	x10,x0,434 <__ram_size+0x234>
+ 440:	|  |  |                  00810c23          	sb	x8,24(x2)
+ 444:	|  |  |                  00100c93          	addi	x25,x0,1
+ 448:	|  |  |                  02800d13          	addi	x26,x0,40
+ 44c:	|  |  |  /--/----------X 0e891c63          	bne	x18,x8,544 <__ram_size+0x344>
+ 450:	|  |  |  |  |            0ffcfc93          	andi	x25,x25,255
+ 454:	|  >--|--|--|--------/-X 00048e63          	beq	x9,x0,470 <__ram_size+0x270>
+ 458:	|  |  |  |  |        |   020007b7          	lui	x15,0x2000
+ 45c:	|  |  |  |  |        |   00078423          	sb	x0,8(x15) # 2000008 <__bss_end+0x8>
+ 460:	|  |  |  |  |        |   020007b7          	lui	x15,0x2000
+ 464:	|  |  |  |  |        |   012786a3          	sb	x18,13(x15) # 200000d <__bss_end+0xd>
+ 468:	|  |  |  |  |        |   020007b7          	lui	x15,0x2000
+ 46c:	|  |  |  |  |        |   01878623          	sb	x24,12(x15) # 200000c <__bss_end+0xc>
+ 470:	|  |  |  |  |        \-> 00c12783          	lw	x15,12(x2)
+ 474:	|  |  |  |  |        /-- 02078663          	beq	x15,x0,4a0 <__ram_size+0x2a0>
+ 478:	|  |  |  |  |        |   020007b7          	lui	x15,0x2000
+ 47c:	|  |  |  |  |        |   01578823          	sb	x21,16(x15) # 2000010 <__bss_end+0x10>
+ 480:	|  |  |  |  |        |   020007b7          	lui	x15,0x2000
+ 484:	|  |  |  |  |        |   014788a3          	sb	x20,17(x15) # 2000011 <__bss_end+0x11>
+ 488:	|  |  |  |  |        |   020007b7          	lui	x15,0x2000
+ 48c:	|  |  |  |  |        |   01778923          	sb	x23,18(x15) # 2000012 <__bss_end+0x12>
+ 490:	|  |  |  |  |        |   020007b7          	lui	x15,0x2000
+ 494:	|  |  |  |  |        |   016789a3          	sb	x22,19(x15) # 2000013 <__bss_end+0x13>
+ 498:	|  |  |  |  |        |   020007b7          	lui	x15,0x2000
+ 49c:	|  |  |  |  |        |   01378a23          	sb	x19,20(x15) # 2000014 <__bss_end+0x14>
+ 4a0:	|  |  |  |  |        \-> 02000737          	lui	x14,0x2000
+ 4a4:	|  |  |  |  |            00000793          	addi	x15,x0,0
+ 4a8:	|  |  |  |  |            01870713          	addi	x14,x14,24 # 2000018 <__bss_end+0x18>
+ 4ac:	|  |  |  |  |  /--/----X 0b97c263          	blt	x15,x25,550 <__ram_size+0x350>
+ 4b0:	|  |  |  |  |  |  |      020007b7          	lui	x15,0x2000
+ 4b4:	|  |  |  |  |  |  |      00100713          	addi	x14,x0,1
+ 4b8:	|  |  |  |  |  |  |      00e78e23          	sb	x14,28(x15) # 200001c <__bss_end+0x1c>
+ 4bc:	|  |  |  |  |  |  |      07c12083          	lw	x1,124(x2)
+ 4c0:	|  |  |  |  |  |  |      07812403          	lw	x8,120(x2)
+ 4c4:	|  |  |  |  |  |  |      07412483          	lw	x9,116(x2)
+ 4c8:	|  |  |  |  |  |  |      07012903          	lw	x18,112(x2)
+ 4cc:	|  |  |  |  |  |  |      06c12983          	lw	x19,108(x2)
+ 4d0:	|  |  |  |  |  |  |      06812a03          	lw	x20,104(x2)
+ 4d4:	|  |  |  |  |  |  |      06412a83          	lw	x21,100(x2)
+ 4d8:	|  |  |  |  |  |  |      06012b03          	lw	x22,96(x2)
+ 4dc:	|  |  |  |  |  |  |      05c12b83          	lw	x23,92(x2)
+ 4e0:	|  |  |  |  |  |  |      05812c03          	lw	x24,88(x2)
+ 4e4:	|  |  |  |  |  |  |      05412c83          	lw	x25,84(x2)
+ 4e8:	|  |  |  |  |  |  |      05012d03          	lw	x26,80(x2)
+ 4ec:	|  |  |  |  |  |  |      04c12d83          	lw	x27,76(x2)
+ 4f0:	|  |  |  |  |  |  |      00000513          	addi	x10,x0,0
+ 4f4:	|  |  |  |  |  |  |      08010113          	addi	x2,x2,128
+ 4f8:	|  |  |  |  |  |  |      00008067          	jalr	x0,0(x1)
+ 4fc:	\--|--|--|--|--|--|----> 00c7c903          	lbu	x18,12(x15)
+ 500:	   |  |  |  |  |  |      00000993          	addi	x19,x0,0
+ 504:	   |  |  |  |  |  |      00000b13          	addi	x22,x0,0
+ 508:	   |  |  |  |  |  |      0ff97913          	andi	x18,x18,255
+ 50c:	   |  |  |  |  |  |      00000b93          	addi	x23,x0,0
+ 510:	   |  |  |  |  |  |      00000a13          	addi	x20,x0,0
+ 514:	   |  |  |  |  |  |      00000a93          	addi	x21,x0,0
+ 518:	   |  |  |  |  |  |      00000c13          	addi	x24,x0,0
+ 51c:	   |  |  |  |  |  |      00000493          	addi	x9,x0,0
+ 520:	   |  \--|--|--|--|----- ed5ff06f          	jal	x0,3f4 <__ram_size+0x1f4>
+ 524:	   |     |  |  |  |  /-> 00040513          	addi	x10,x8,0
+ 528:	   |     |  |  |  |  |   0c0000ef          	jal	x1,5e8 <sweep.constprop.0>
+ 52c:	   |     |  |  |  |  |   01810793          	addi	x15,x2,24
+ 530:	   |     |  |  |  |  |   019787b3          	add	x15,x15,x25
+ 534:	   |     |  |  |  |  |   00050413          	addi	x8,x10,0
+ 538:	   |     |  |  |  |  |   00a78023          	sb	x10,0(x15)
+ 53c:	   |     |  |  |  |  |   001c8c93          	addi	x25,x25,1
+ 540:	   |     |  \--|--|--|-- f0dff06f          	jal	x0,44c <__ram_size+0x24c>
+ 544:	   |     \-----|--|--\-X ffac90e3          	bne	x25,x26,524 <__ram_size+0x324>
+ 548:	   |           |  |      02800c93          	addi	x25,x0,40
+ 54c:	   \-----------|--|----- f09ff06f          	jal	x0,454 <__ram_size+0x254>
+ 550:	               |  \----> 01810693          	addi	x13,x2,24
+ 554:	               |         00f686b3          	add	x13,x13,x15
+ 558:	               |         0006c683          	lbu	x13,0(x13)
+ 55c:	               |         00178793          	addi	x15,x15,1
+ 560:	               |         00d70023          	sb	x13,0(x14)
+ 564:	               \-------- f49ff06f          	jal	x0,4ac <__ram_size+0x2ac>
 
-00000cc8 <rel.constprop.0>:
- cc8:	    00159713          	slli	x14,x11,0x1
- ccc:	    020007b7          	lui	x15,0x2000
- cd0:	    00e78733          	add	x14,x15,x14
- cd4:	    02075683          	lhu	x13,32(x14)
- cd8:	    02000837          	lui	x16,0x2000
- cdc:	    00151713          	slli	x14,x10,0x1
- ce0:	    02080813          	addi	x16,x16,32 # 2000020 <__bss_end+0x20>
- ce4:	    01070733          	add	x14,x14,x16
- ce8:	    00c68633          	add	x12,x13,x12
- cec:	    00075683          	lhu	x13,0(x14)
- cf0:	/-- 00d65863          	bge	x12,x13,d00 <rel.constprop.0+0x38>
- cf4:	|   00c71023          	sh	x12,0(x14)
- cf8:	|   00a787b3          	add	x15,x15,x10
- cfc:	|   06b78823          	sb	x11,112(x15) # 2000070 <__bss_end+0x70>
- d00:	\-> 00008067          	jalr	x0,0(x1)
+00000568 <rel.constprop.0>:
+ 568:	       020007b7          	lui	x15,0x2000
+ 56c:	       02078793          	addi	x15,x15,32 # 2000020 <__bss_end+0x20>
+ 570:	       00f50833          	add	x16,x10,x15
+ 574:	       00084883          	lbu	x17,0(x16)
+ 578:	       00f587b3          	add	x15,x11,x15
+ 57c:	       0007c303          	lbu	x6,0(x15)
+ 580:	       00c888b3          	add	x17,x17,x12
+ 584:	       00050713          	addi	x14,x10,0
+ 588:	       00000513          	addi	x10,x0,0
+ 58c:	   /-- 0068d663          	bge	x17,x6,598 <rel.constprop.0+0x30>
+ 590:	   |   01178023          	sb	x17,0(x15)
+ 594:	   |   00100513          	addi	x10,x0,1
+ 598:	   \-> 0007c883          	lbu	x17,0(x15)
+ 59c:	       00084303          	lbu	x6,0(x16)
+ 5a0:	       00c888b3          	add	x17,x17,x12
+ 5a4:	   /-- 0068d663          	bge	x17,x6,5b0 <rel.constprop.0+0x48>
+ 5a8:	   |   01180023          	sb	x17,0(x16)
+ 5ac:	   |   00100513          	addi	x10,x0,1
+ 5b0:	/--\-X 00d71e63          	bne	x14,x13,5cc <rel.constprop.0+0x64>
+ 5b4:	|      0007c783          	lbu	x15,0(x15)
+ 5b8:	|      00084703          	lbu	x14,0(x16)
+ 5bc:	|      00c787b3          	add	x15,x15,x12
+ 5c0:	|  /-- 02e79263          	bne	x15,x14,5e4 <rel.constprop.0+0x7c>
+ 5c4:	|  |   00058513          	addi	x10,x11,0
+ 5c8:	|  |   00008067          	jalr	x0,0(x1)
+ 5cc:	\--+-X 00d59c63          	bne	x11,x13,5e4 <rel.constprop.0+0x7c>
+ 5d0:	   |   00084683          	lbu	x13,0(x16)
+ 5d4:	   |   0007c783          	lbu	x15,0(x15)
+ 5d8:	   |   00c686b3          	add	x13,x13,x12
+ 5dc:	   +-- 00f69463          	bne	x13,x15,5e4 <rel.constprop.0+0x7c>
+ 5e0:	   |   00070513          	addi	x10,x14,0
+ 5e4:	   \-> 00008067          	jalr	x0,0(x1)
 
-00000d04 <__riscv_save_12>:
- d04:	fc010113          	addi	x2,x2,-64
- d08:	00000313          	addi	x6,x0,0
- d0c:	01b12623          	sw	x27,12(x2)
- d10:	00c0006f          	jal	x0,d1c <__riscv_save_10+0x8>
+000005e8 <sweep.constprop.0>:
+ 5e8:	    ff010113          	addi	x2,x2,-16
+ 5ec:	    00050693          	addi	x13,x10,0
+ 5f0:	    00812423          	sw	x8,8(x2)
+ 5f4:	    06400613          	addi	x12,x0,100
+ 5f8:	    00050413          	addi	x8,x10,0
+ 5fc:	    00100593          	addi	x11,x0,1
+ 600:	    02400513          	addi	x10,x0,36
+ 604:	    00112623          	sw	x1,12(x2)
+ 608:	    00912223          	sw	x9,4(x2)
+ 60c:	    01212023          	sw	x18,0(x2)
+ 610:	    f59ff0ef          	jal	x1,568 <rel.constprop.0>
+ 614:	    00050913          	addi	x18,x10,0
+ 618:	    00040693          	addi	x13,x8,0
+ 61c:	    00500613          	addi	x12,x0,5
+ 620:	    00500593          	addi	x11,x0,5
+ 624:	    00100513          	addi	x10,x0,1
+ 628:	    f41ff0ef          	jal	x1,568 <rel.constprop.0>
+ 62c:	    00090493          	addi	x9,x18,0
+ 630:	/-- 00050463          	beq	x10,x0,638 <sweep.constprop.0+0x50>
+ 634:	|   00050493          	addi	x9,x10,0
+ 638:	\-> 00040693          	addi	x13,x8,0
+ 63c:	    00500613          	addi	x12,x0,5
+ 640:	    00400593          	addi	x11,x0,4
+ 644:	    00200513          	addi	x10,x0,2
+ 648:	    f21ff0ef          	jal	x1,568 <rel.constprop.0>
+ 64c:	    00050913          	addi	x18,x10,0
+ 650:	/-- 00051463          	bne	x10,x0,658 <sweep.constprop.0+0x70>
+ 654:	|   00048913          	addi	x18,x9,0
+ 658:	\-> 00040693          	addi	x13,x8,0
+ 65c:	    00500613          	addi	x12,x0,5
+ 660:	    00600593          	addi	x11,x0,6
+ 664:	    00300513          	addi	x10,x0,3
+ 668:	    f01ff0ef          	jal	x1,568 <rel.constprop.0>
+ 66c:	    00050493          	addi	x9,x10,0
+ 670:	/-- 00051463          	bne	x10,x0,678 <sweep.constprop.0+0x90>
+ 674:	|   00090493          	addi	x9,x18,0
+ 678:	\-> 00040693          	addi	x13,x8,0
+ 67c:	    00500613          	addi	x12,x0,5
+ 680:	    00a00593          	addi	x11,x0,10
+ 684:	    00700513          	addi	x10,x0,7
+ 688:	    ee1ff0ef          	jal	x1,568 <rel.constprop.0>
+ 68c:	    00050913          	addi	x18,x10,0
+ 690:	/-- 00051463          	bne	x10,x0,698 <sweep.constprop.0+0xb0>
+ 694:	|   00048913          	addi	x18,x9,0
+ 698:	\-> 00040693          	addi	x13,x8,0
+ 69c:	    00500613          	addi	x12,x0,5
+ 6a0:	    00b00593          	addi	x11,x0,11
+ 6a4:	    00800513          	addi	x10,x0,8
+ 6a8:	    ec1ff0ef          	jal	x1,568 <rel.constprop.0>
+ 6ac:	    00050493          	addi	x9,x10,0
+ 6b0:	/-- 00051463          	bne	x10,x0,6b8 <sweep.constprop.0+0xd0>
+ 6b4:	|   00090493          	addi	x9,x18,0
+ 6b8:	\-> 00040693          	addi	x13,x8,0
+ 6bc:	    00500613          	addi	x12,x0,5
+ 6c0:	    00c00593          	addi	x11,x0,12
+ 6c4:	    00900513          	addi	x10,x0,9
+ 6c8:	    ea1ff0ef          	jal	x1,568 <rel.constprop.0>
+ 6cc:	    00050913          	addi	x18,x10,0
+ 6d0:	/-- 00051463          	bne	x10,x0,6d8 <sweep.constprop.0+0xf0>
+ 6d4:	|   00048913          	addi	x18,x9,0
+ 6d8:	\-> 00040693          	addi	x13,x8,0
+ 6dc:	    00500613          	addi	x12,x0,5
+ 6e0:	    00e00593          	addi	x11,x0,14
+ 6e4:	    00d00513          	addi	x10,x0,13
+ 6e8:	    e81ff0ef          	jal	x1,568 <rel.constprop.0>
+ 6ec:	    00050493          	addi	x9,x10,0
+ 6f0:	/-- 00051463          	bne	x10,x0,6f8 <sweep.constprop.0+0x110>
+ 6f4:	|   00090493          	addi	x9,x18,0
+ 6f8:	\-> 00040693          	addi	x13,x8,0
+ 6fc:	    00500613          	addi	x12,x0,5
+ 700:	    00f00593          	addi	x11,x0,15
+ 704:	    00e00513          	addi	x10,x0,14
+ 708:	    e61ff0ef          	jal	x1,568 <rel.constprop.0>
+ 70c:	    00050913          	addi	x18,x10,0
+ 710:	/-- 00051463          	bne	x10,x0,718 <sweep.constprop.0+0x130>
+ 714:	|   00048913          	addi	x18,x9,0
+ 718:	\-> 00040693          	addi	x13,x8,0
+ 71c:	    00500613          	addi	x12,x0,5
+ 720:	    01100593          	addi	x11,x0,17
+ 724:	    01000513          	addi	x10,x0,16
+ 728:	    e41ff0ef          	jal	x1,568 <rel.constprop.0>
+ 72c:	    00050493          	addi	x9,x10,0
+ 730:	/-- 00051463          	bne	x10,x0,738 <sweep.constprop.0+0x150>
+ 734:	|   00090493          	addi	x9,x18,0
+ 738:	\-> 00040693          	addi	x13,x8,0
+ 73c:	    00500613          	addi	x12,x0,5
+ 740:	    01300593          	addi	x11,x0,19
+ 744:	    01200513          	addi	x10,x0,18
+ 748:	    e21ff0ef          	jal	x1,568 <rel.constprop.0>
+ 74c:	    00050913          	addi	x18,x10,0
+ 750:	/-- 00051463          	bne	x10,x0,758 <sweep.constprop.0+0x170>
+ 754:	|   00048913          	addi	x18,x9,0
+ 758:	\-> 00040693          	addi	x13,x8,0
+ 75c:	    00500613          	addi	x12,x0,5
+ 760:	    01500593          	addi	x11,x0,21
+ 764:	    01400513          	addi	x10,x0,20
+ 768:	    e01ff0ef          	jal	x1,568 <rel.constprop.0>
+ 76c:	    00050493          	addi	x9,x10,0
+ 770:	/-- 00051463          	bne	x10,x0,778 <sweep.constprop.0+0x190>
+ 774:	|   00090493          	addi	x9,x18,0
+ 778:	\-> 00040693          	addi	x13,x8,0
+ 77c:	    00500613          	addi	x12,x0,5
+ 780:	    01900593          	addi	x11,x0,25
+ 784:	    01600513          	addi	x10,x0,22
+ 788:	    de1ff0ef          	jal	x1,568 <rel.constprop.0>
+ 78c:	    00050913          	addi	x18,x10,0
+ 790:	/-- 00051463          	bne	x10,x0,798 <sweep.constprop.0+0x1b0>
+ 794:	|   00048913          	addi	x18,x9,0
+ 798:	\-> 00040693          	addi	x13,x8,0
+ 79c:	    00500613          	addi	x12,x0,5
+ 7a0:	    01a00593          	addi	x11,x0,26
+ 7a4:	    01700513          	addi	x10,x0,23
+ 7a8:	    dc1ff0ef          	jal	x1,568 <rel.constprop.0>
+ 7ac:	    00050493          	addi	x9,x10,0
+ 7b0:	/-- 00051463          	bne	x10,x0,7b8 <sweep.constprop.0+0x1d0>
+ 7b4:	|   00090493          	addi	x9,x18,0
+ 7b8:	\-> 00040693          	addi	x13,x8,0
+ 7bc:	    00500613          	addi	x12,x0,5
+ 7c0:	    01b00593          	addi	x11,x0,27
+ 7c4:	    01800513          	addi	x10,x0,24
+ 7c8:	    da1ff0ef          	jal	x1,568 <rel.constprop.0>
+ 7cc:	    00050913          	addi	x18,x10,0
+ 7d0:	/-- 00051463          	bne	x10,x0,7d8 <sweep.constprop.0+0x1f0>
+ 7d4:	|   00048913          	addi	x18,x9,0
+ 7d8:	\-> 00040693          	addi	x13,x8,0
+ 7dc:	    00500613          	addi	x12,x0,5
+ 7e0:	    02000593          	addi	x11,x0,32
+ 7e4:	    01d00513          	addi	x10,x0,29
+ 7e8:	    d81ff0ef          	jal	x1,568 <rel.constprop.0>
+ 7ec:	    00050493          	addi	x9,x10,0
+ 7f0:	/-- 00051463          	bne	x10,x0,7f8 <sweep.constprop.0+0x210>
+ 7f4:	|   00090493          	addi	x9,x18,0
+ 7f8:	\-> 00040693          	addi	x13,x8,0
+ 7fc:	    00500613          	addi	x12,x0,5
+ 800:	    01f00593          	addi	x11,x0,31
+ 804:	    01c00513          	addi	x10,x0,28
+ 808:	    d61ff0ef          	jal	x1,568 <rel.constprop.0>
+ 80c:	    00050913          	addi	x18,x10,0
+ 810:	/-- 00051463          	bne	x10,x0,818 <sweep.constprop.0+0x230>
+ 814:	|   00048913          	addi	x18,x9,0
+ 818:	\-> 00040693          	addi	x13,x8,0
+ 81c:	    00500613          	addi	x12,x0,5
+ 820:	    02200593          	addi	x11,x0,34
+ 824:	    01f00513          	addi	x10,x0,31
+ 828:	    d41ff0ef          	jal	x1,568 <rel.constprop.0>
+ 82c:	    00050493          	addi	x9,x10,0
+ 830:	/-- 00051463          	bne	x10,x0,838 <sweep.constprop.0+0x250>
+ 834:	|   00090493          	addi	x9,x18,0
+ 838:	\-> 00040693          	addi	x13,x8,0
+ 83c:	    00500613          	addi	x12,x0,5
+ 840:	    02100593          	addi	x11,x0,33
+ 844:	    01e00513          	addi	x10,x0,30
+ 848:	    d21ff0ef          	jal	x1,568 <rel.constprop.0>
+ 84c:	    00050913          	addi	x18,x10,0
+ 850:	/-- 00051463          	bne	x10,x0,858 <sweep.constprop.0+0x270>
+ 854:	|   00048913          	addi	x18,x9,0
+ 858:	\-> 00040693          	addi	x13,x8,0
+ 85c:	    00700613          	addi	x12,x0,7
+ 860:	    00b00593          	addi	x11,x0,11
+ 864:	    00900513          	addi	x10,x0,9
+ 868:	    d01ff0ef          	jal	x1,568 <rel.constprop.0>
+ 86c:	    00050493          	addi	x9,x10,0
+ 870:	/-- 00051463          	bne	x10,x0,878 <sweep.constprop.0+0x290>
+ 874:	|   00090493          	addi	x9,x18,0
+ 878:	\-> 00040693          	addi	x13,x8,0
+ 87c:	    00700613          	addi	x12,x0,7
+ 880:	    01300593          	addi	x11,x0,19
+ 884:	    00b00513          	addi	x10,x0,11
+ 888:	    ce1ff0ef          	jal	x1,568 <rel.constprop.0>
+ 88c:	    00050913          	addi	x18,x10,0
+ 890:	/-- 00051463          	bne	x10,x0,898 <sweep.constprop.0+0x2b0>
+ 894:	|   00048913          	addi	x18,x9,0
+ 898:	\-> 00040693          	addi	x13,x8,0
+ 89c:	    00700613          	addi	x12,x0,7
+ 8a0:	    01700593          	addi	x11,x0,23
+ 8a4:	    01000513          	addi	x10,x0,16
+ 8a8:	    cc1ff0ef          	jal	x1,568 <rel.constprop.0>
+ 8ac:	    00050493          	addi	x9,x10,0
+ 8b0:	/-- 00051463          	bne	x10,x0,8b8 <sweep.constprop.0+0x2d0>
+ 8b4:	|   00090493          	addi	x9,x18,0
+ 8b8:	\-> 00040693          	addi	x13,x8,0
+ 8bc:	    00700613          	addi	x12,x0,7
+ 8c0:	    01900593          	addi	x11,x0,25
+ 8c4:	    01700513          	addi	x10,x0,23
+ 8c8:	    ca1ff0ef          	jal	x1,568 <rel.constprop.0>
+ 8cc:	    00050913          	addi	x18,x10,0
+ 8d0:	/-- 00051463          	bne	x10,x0,8d8 <sweep.constprop.0+0x2f0>
+ 8d4:	|   00048913          	addi	x18,x9,0
+ 8d8:	\-> 00040693          	addi	x13,x8,0
+ 8dc:	    00b00613          	addi	x12,x0,11
+ 8e0:	    00700593          	addi	x11,x0,7
+ 8e4:	    00500513          	addi	x10,x0,5
+ 8e8:	    c81ff0ef          	jal	x1,568 <rel.constprop.0>
+ 8ec:	    00050493          	addi	x9,x10,0
+ 8f0:	/-- 00051463          	bne	x10,x0,8f8 <sweep.constprop.0+0x310>
+ 8f4:	|   00090493          	addi	x9,x18,0
+ 8f8:	\-> 00040693          	addi	x13,x8,0
+ 8fc:	    00b00613          	addi	x12,x0,11
+ 900:	    00800593          	addi	x11,x0,8
+ 904:	    00500513          	addi	x10,x0,5
+ 908:	    c61ff0ef          	jal	x1,568 <rel.constprop.0>
+ 90c:	    00050913          	addi	x18,x10,0
+ 910:	/-- 00051463          	bne	x10,x0,918 <sweep.constprop.0+0x330>
+ 914:	|   00048913          	addi	x18,x9,0
+ 918:	\-> 00040693          	addi	x13,x8,0
+ 91c:	    00b00613          	addi	x12,x0,11
+ 920:	    00f00593          	addi	x11,x0,15
+ 924:	    00700513          	addi	x10,x0,7
+ 928:	    c41ff0ef          	jal	x1,568 <rel.constprop.0>
+ 92c:	    00050493          	addi	x9,x10,0
+ 930:	/-- 00051463          	bne	x10,x0,938 <sweep.constprop.0+0x350>
+ 934:	|   00090493          	addi	x9,x18,0
+ 938:	\-> 00040693          	addi	x13,x8,0
+ 93c:	    00b00613          	addi	x12,x0,11
+ 940:	    01400593          	addi	x11,x0,20
+ 944:	    00800513          	addi	x10,x0,8
+ 948:	    c21ff0ef          	jal	x1,568 <rel.constprop.0>
+ 94c:	    00050913          	addi	x18,x10,0
+ 950:	/-- 00051463          	bne	x10,x0,958 <sweep.constprop.0+0x370>
+ 954:	|   00048913          	addi	x18,x9,0
+ 958:	\-> 00040693          	addi	x13,x8,0
+ 95c:	    00b00613          	addi	x12,x0,11
+ 960:	    01b00593          	addi	x11,x0,27
+ 964:	    01400513          	addi	x10,x0,20
+ 968:	    c01ff0ef          	jal	x1,568 <rel.constprop.0>
+ 96c:	    00050493          	addi	x9,x10,0
+ 970:	/-- 00051463          	bne	x10,x0,978 <sweep.constprop.0+0x390>
+ 974:	|   00090493          	addi	x9,x18,0
+ 978:	\-> 00040693          	addi	x13,x8,0
+ 97c:	    00b00613          	addi	x12,x0,11
+ 980:	    01d00593          	addi	x11,x0,29
+ 984:	    01b00513          	addi	x10,x0,27
+ 988:	    be1ff0ef          	jal	x1,568 <rel.constprop.0>
+ 98c:	    00050913          	addi	x18,x10,0
+ 990:	/-- 00051463          	bne	x10,x0,998 <sweep.constprop.0+0x3b0>
+ 994:	|   00048913          	addi	x18,x9,0
+ 998:	\-> 00040693          	addi	x13,x8,0
+ 99c:	    00b00613          	addi	x12,x0,11
+ 9a0:	    01a00593          	addi	x11,x0,26
+ 9a4:	    01d00513          	addi	x10,x0,29
+ 9a8:	    bc1ff0ef          	jal	x1,568 <rel.constprop.0>
+ 9ac:	    00050493          	addi	x9,x10,0
+ 9b0:	/-- 00051463          	bne	x10,x0,9b8 <sweep.constprop.0+0x3d0>
+ 9b4:	|   00090493          	addi	x9,x18,0
+ 9b8:	\-> 00040693          	addi	x13,x8,0
+ 9bc:	    00f00613          	addi	x12,x0,15
+ 9c0:	    00400593          	addi	x11,x0,4
+ 9c4:	    00100513          	addi	x10,x0,1
+ 9c8:	    ba1ff0ef          	jal	x1,568 <rel.constprop.0>
+ 9cc:	    00050913          	addi	x18,x10,0
+ 9d0:	/-- 00051463          	bne	x10,x0,9d8 <sweep.constprop.0+0x3f0>
+ 9d4:	|   00048913          	addi	x18,x9,0
+ 9d8:	\-> 00040693          	addi	x13,x8,0
+ 9dc:	    00f00613          	addi	x12,x0,15
+ 9e0:	    00600593          	addi	x11,x0,6
+ 9e4:	    00100513          	addi	x10,x0,1
+ 9e8:	    b81ff0ef          	jal	x1,568 <rel.constprop.0>
+ 9ec:	    00050493          	addi	x9,x10,0
+ 9f0:	/-- 00051463          	bne	x10,x0,9f8 <sweep.constprop.0+0x410>
+ 9f4:	|   00090493          	addi	x9,x18,0
+ 9f8:	\-> 00040693          	addi	x13,x8,0
+ 9fc:	    00f00613          	addi	x12,x0,15
+ a00:	    00e00593          	addi	x11,x0,14
+ a04:	    00400513          	addi	x10,x0,4
+ a08:	    b61ff0ef          	jal	x1,568 <rel.constprop.0>
+ a0c:	    00050913          	addi	x18,x10,0
+ a10:	/-- 00051463          	bne	x10,x0,a18 <sweep.constprop.0+0x430>
+ a14:	|   00048913          	addi	x18,x9,0
+ a18:	\-> 00040693          	addi	x13,x8,0
+ a1c:	    00f00613          	addi	x12,x0,15
+ a20:	    01c00593          	addi	x11,x0,28
+ a24:	    02000513          	addi	x10,x0,32
+ a28:	    b41ff0ef          	jal	x1,568 <rel.constprop.0>
+ a2c:	    00050493          	addi	x9,x10,0
+ a30:	/-- 00051463          	bne	x10,x0,a38 <sweep.constprop.0+0x450>
+ a34:	|   00090493          	addi	x9,x18,0
+ a38:	\-> 00040693          	addi	x13,x8,0
+ a3c:	    01300613          	addi	x12,x0,19
+ a40:	    01e00593          	addi	x11,x0,30
+ a44:	    00d00513          	addi	x10,x0,13
+ a48:	    b21ff0ef          	jal	x1,568 <rel.constprop.0>
+ a4c:	    00050913          	addi	x18,x10,0
+ a50:	/-- 00051463          	bne	x10,x0,a58 <sweep.constprop.0+0x470>
+ a54:	|   00048913          	addi	x18,x9,0
+ a58:	\-> 00040693          	addi	x13,x8,0
+ a5c:	    01300613          	addi	x12,x0,19
+ a60:	    02300593          	addi	x11,x0,35
+ a64:	    01e00513          	addi	x10,x0,30
+ a68:	    b01ff0ef          	jal	x1,568 <rel.constprop.0>
+ a6c:	    00050493          	addi	x9,x10,0
+ a70:	/-- 00051463          	bne	x10,x0,a78 <sweep.constprop.0+0x490>
+ a74:	|   00090493          	addi	x9,x18,0
+ a78:	\-> 00040693          	addi	x13,x8,0
+ a7c:	    01300613          	addi	x12,x0,19
+ a80:	    01f00593          	addi	x11,x0,31
+ a84:	    02300513          	addi	x10,x0,35
+ a88:	    ae1ff0ef          	jal	x1,568 <rel.constprop.0>
+ a8c:	/-- 00051463          	bne	x10,x0,a94 <sweep.constprop.0+0x4ac>
+ a90:	|   00048513          	addi	x10,x9,0
+ a94:	\-> 00c12083          	lw	x1,12(x2)
+ a98:	    00812403          	lw	x8,8(x2)
+ a9c:	    00412483          	lw	x9,4(x2)
+ aa0:	    00012903          	lw	x18,0(x2)
+ aa4:	    01010113          	addi	x2,x2,16
+ aa8:	    00008067          	jalr	x0,0(x1)
 
-00000d14 <__riscv_save_10>:
- d14:	fc010113          	addi	x2,x2,-64
- d18:	ff000313          	addi	x6,x0,-16
- d1c:	01a12823          	sw	x26,16(x2)
- d20:	01912a23          	sw	x25,20(x2)
- d24:	01812c23          	sw	x24,24(x2)
- d28:	01712e23          	sw	x23,28(x2)
- d2c:	00c0006f          	jal	x0,d38 <__riscv_save_4+0x8>
+00000aac <__riscv_save_12>:
+ aac:	fc010113          	addi	x2,x2,-64
+ ab0:	00000313          	addi	x6,x0,0
+ ab4:	01b12623          	sw	x27,12(x2)
+ ab8:	00c0006f          	jal	x0,ac4 <__riscv_save_10+0x8>
 
-00000d30 <__riscv_save_4>:
- d30:	fc010113          	addi	x2,x2,-64
- d34:	fe000313          	addi	x6,x0,-32
- d38:	03612023          	sw	x22,32(x2)
- d3c:	03512223          	sw	x21,36(x2)
- d40:	03412423          	sw	x20,40(x2)
- d44:	03312623          	sw	x19,44(x2)
- d48:	03212823          	sw	x18,48(x2)
- d4c:	02912a23          	sw	x9,52(x2)
- d50:	02812c23          	sw	x8,56(x2)
- d54:	02112e23          	sw	x1,60(x2)
- d58:	40610133          	sub	x2,x2,x6
- d5c:	00028067          	jalr	x0,0(x5)
+00000abc <__riscv_save_10>:
+ abc:	fc010113          	addi	x2,x2,-64
+ ac0:	ff000313          	addi	x6,x0,-16
+ ac4:	01a12823          	sw	x26,16(x2)
+ ac8:	01912a23          	sw	x25,20(x2)
+ acc:	01812c23          	sw	x24,24(x2)
+ ad0:	01712e23          	sw	x23,28(x2)
+ ad4:	00c0006f          	jal	x0,ae0 <__riscv_save_4+0x8>
 
-00000d60 <__riscv_save_0>:
- d60:	ff010113          	addi	x2,x2,-16
- d64:	01212023          	sw	x18,0(x2)
- d68:	00912223          	sw	x9,4(x2)
- d6c:	00812423          	sw	x8,8(x2)
- d70:	00112623          	sw	x1,12(x2)
- d74:	00028067          	jalr	x0,0(x5)
+00000ad8 <__riscv_save_4>:
+ ad8:	fc010113          	addi	x2,x2,-64
+ adc:	fe000313          	addi	x6,x0,-32
+ ae0:	03612023          	sw	x22,32(x2)
+ ae4:	03512223          	sw	x21,36(x2)
+ ae8:	03412423          	sw	x20,40(x2)
+ aec:	03312623          	sw	x19,44(x2)
+ af0:	03212823          	sw	x18,48(x2)
+ af4:	02912a23          	sw	x9,52(x2)
+ af8:	02812c23          	sw	x8,56(x2)
+ afc:	02112e23          	sw	x1,60(x2)
+ b00:	40610133          	sub	x2,x2,x6
+ b04:	00028067          	jalr	x0,0(x5)
 
-00000d78 <__riscv_restore_12>:
- d78:	00c12d83          	lw	x27,12(x2)
- d7c:	01010113          	addi	x2,x2,16
+00000b08 <__riscv_save_0>:
+ b08:	ff010113          	addi	x2,x2,-16
+ b0c:	01212023          	sw	x18,0(x2)
+ b10:	00912223          	sw	x9,4(x2)
+ b14:	00812423          	sw	x8,8(x2)
+ b18:	00112623          	sw	x1,12(x2)
+ b1c:	00028067          	jalr	x0,0(x5)
 
-00000d80 <__riscv_restore_10>:
- d80:	00012d03          	lw	x26,0(x2)
- d84:	00412c83          	lw	x25,4(x2)
- d88:	00812c03          	lw	x24,8(x2)
- d8c:	00c12b83          	lw	x23,12(x2)
- d90:	01010113          	addi	x2,x2,16
+00000b20 <__riscv_restore_12>:
+ b20:	00c12d83          	lw	x27,12(x2)
+ b24:	01010113          	addi	x2,x2,16
 
-00000d94 <__riscv_restore_4>:
- d94:	00012b03          	lw	x22,0(x2)
- d98:	00412a83          	lw	x21,4(x2)
- d9c:	00812a03          	lw	x20,8(x2)
- da0:	00c12983          	lw	x19,12(x2)
- da4:	01010113          	addi	x2,x2,16
+00000b28 <__riscv_restore_10>:
+ b28:	00012d03          	lw	x26,0(x2)
+ b2c:	00412c83          	lw	x25,4(x2)
+ b30:	00812c03          	lw	x24,8(x2)
+ b34:	00c12b83          	lw	x23,12(x2)
+ b38:	01010113          	addi	x2,x2,16
 
-00000da8 <__riscv_restore_0>:
- da8:	00012903          	lw	x18,0(x2)
- dac:	00412483          	lw	x9,4(x2)
- db0:	00812403          	lw	x8,8(x2)
- db4:	00c12083          	lw	x1,12(x2)
- db8:	01010113          	addi	x2,x2,16
- dbc:	00008067          	jalr	x0,0(x1)
+00000b3c <__riscv_restore_4>:
+ b3c:	00012b03          	lw	x22,0(x2)
+ b40:	00412a83          	lw	x21,4(x2)
+ b44:	00812a03          	lw	x20,8(x2)
+ b48:	00c12983          	lw	x19,12(x2)
+ b4c:	01010113          	addi	x2,x2,16
 
-00000dc0 <memcpy>:
- dc0:	       00050313          	addi	x6,x10,0
- dc4:	/----- 00060e63          	beq	x12,x0,de0 <memcpy+0x20>
- dc8:	|  /-> 00058383          	lb	x7,0(x11)
- dcc:	|  |   00730023          	sb	x7,0(x6)
- dd0:	|  |   fff60613          	addi	x12,x12,-1
- dd4:	|  |   00130313          	addi	x6,x6,1
- dd8:	|  |   00158593          	addi	x11,x11,1
- ddc:	|  \-- fe0616e3          	bne	x12,x0,dc8 <memcpy+0x8>
- de0:	\----> 00008067          	jalr	x0,0(x1)
+00000b50 <__riscv_restore_0>:
+ b50:	00012903          	lw	x18,0(x2)
+ b54:	00412483          	lw	x9,4(x2)
+ b58:	00812403          	lw	x8,8(x2)
+ b5c:	00c12083          	lw	x1,12(x2)
+ b60:	01010113          	addi	x2,x2,16
+ b64:	00008067          	jalr	x0,0(x1)
 
-00000de4 <memset>:
- de4:	       00050313          	addi	x6,x10,0
- de8:	/----- 00060a63          	beq	x12,x0,dfc <memset+0x18>
- dec:	|  /-> 00b30023          	sb	x11,0(x6)
- df0:	|  |   fff60613          	addi	x12,x12,-1
- df4:	|  |   00130313          	addi	x6,x6,1
- df8:	|  \-- fe061ae3          	bne	x12,x0,dec <memset+0x8>
- dfc:	\----> 00008067          	jalr	x0,0(x1)
+00000b68 <memcpy>:
+ b68:	       00050313          	addi	x6,x10,0
+ b6c:	/----- 00060e63          	beq	x12,x0,b88 <memcpy+0x20>
+ b70:	|  /-> 00058383          	lb	x7,0(x11)
+ b74:	|  |   00730023          	sb	x7,0(x6)
+ b78:	|  |   fff60613          	addi	x12,x12,-1
+ b7c:	|  |   00130313          	addi	x6,x6,1
+ b80:	|  |   00158593          	addi	x11,x11,1
+ b84:	|  \-- fe0616e3          	bne	x12,x0,b70 <memcpy+0x8>
+ b88:	\----> 00008067          	jalr	x0,0(x1)
 
-00000e00 <_set_tls>:
- e00:	00050213          	addi	x4,x10,0
- e04:	00008067          	jalr	x0,0(x1)
+00000b8c <memset>:
+ b8c:	       00050313          	addi	x6,x10,0
+ b90:	/----- 00060a63          	beq	x12,x0,ba4 <memset+0x18>
+ b94:	|  /-> 00b30023          	sb	x11,0(x6)
+ b98:	|  |   fff60613          	addi	x12,x12,-1
+ b9c:	|  |   00130313          	addi	x6,x6,1
+ ba0:	|  \-- fe061ae3          	bne	x12,x0,b94 <memset+0x8>
+ ba4:	\----> 00008067          	jalr	x0,0(x1)
+
+00000ba8 <_set_tls>:
+ ba8:	00050213          	addi	x4,x10,0
+ bac:	00008067          	jalr	x0,0(x1)
